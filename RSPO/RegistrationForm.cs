@@ -21,9 +21,9 @@ namespace RSPO
             MF2 = MF;
             MF.Hide();
 
-           
+
         }
-        //ввод логина и пароля до 10 символов
+
         private void RegistrationForm_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
         {
             MF2.Show();

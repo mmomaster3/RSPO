@@ -28,240 +28,292 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.AGaugeLabel aGaugeLabel17 = new System.Windows.Forms.AGaugeLabel();
-            System.Windows.Forms.AGaugeRange aGaugeRange9 = new System.Windows.Forms.AGaugeRange();
-            System.Windows.Forms.AGaugeRange aGaugeRange10 = new System.Windows.Forms.AGaugeRange();
-            System.Windows.Forms.AGaugeLabel aGaugeLabel18 = new System.Windows.Forms.AGaugeLabel();
-            System.Windows.Forms.AGaugeLabel aGaugeLabel19 = new System.Windows.Forms.AGaugeLabel();
-            System.Windows.Forms.AGaugeLabel aGaugeLabel20 = new System.Windows.Forms.AGaugeLabel();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.AGaugeLabel aGaugeLabel1 = new System.Windows.Forms.AGaugeLabel();
+            System.Windows.Forms.AGaugeRange aGaugeRange1 = new System.Windows.Forms.AGaugeRange();
+            System.Windows.Forms.AGaugeRange aGaugeRange2 = new System.Windows.Forms.AGaugeRange();
+            System.Windows.Forms.AGaugeLabel aGaugeLabel2 = new System.Windows.Forms.AGaugeLabel();
+            System.Windows.Forms.AGaugeLabel aGaugeLabel3 = new System.Windows.Forms.AGaugeLabel();
+            System.Windows.Forms.AGaugeLabel aGaugeLabel4 = new System.Windows.Forms.AGaugeLabel();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AZSForm));
-            this.aGauge1 = new System.Windows.Forms.AGauge();
-            this.aGauge2 = new System.Windows.Forms.AGauge();
-            this.aGauge3 = new System.Windows.Forms.AGauge();
-            this.aGauge4 = new System.Windows.Forms.AGauge();
+            this.aGaugeAi95 = new System.Windows.Forms.AGauge();
+            this.aGaugeAi92 = new System.Windows.Forms.AGauge();
+            this.aGaugeDisel = new System.Windows.Forms.AGauge();
+            this.aGaugeGaz = new System.Windows.Forms.AGauge();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pistolTable1DataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pistolTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.employeesDBDataSet = new RSPO.EmployeesDBDataSet();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialCheckBox1 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.materialCheckBox2 = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialCheckBox3 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.materialCheckBox2 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.materialCheckBox1 = new MaterialSkin.Controls.MaterialCheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.TimerButton = new System.Windows.Forms.Button();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.FioStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timerPistols = new System.Windows.Forms.Timer(this.components);
+            this.pistolTable1BindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.pistolTable1BindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.Ai95Box = new System.Windows.Forms.TextBox();
+            this.Ai95Label = new MaterialSkin.Controls.MaterialLabel();
+            this.Ai92Label = new MaterialSkin.Controls.MaterialLabel();
+            this.Ai92Box = new System.Windows.Forms.TextBox();
+            this.DiselLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.DiselBox = new System.Windows.Forms.TextBox();
+            this.GazLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.GazBox = new System.Windows.Forms.TextBox();
+            this.DeleteAllButton = new System.Windows.Forms.Button();
+            this.employeesTableTableAdapter1 = new RSPO.EmployeesDBDataSetTableAdapters.EmployeesTableTableAdapter();
+            this.pistolTable1TableAdapter = new RSPO.EmployeesDBDataSetTableAdapters.PistolTable1TableAdapter();
+            this.tableAdapterManager = new RSPO.EmployeesDBDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pistolTable1DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pistolTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesDBDataSet)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.statusStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pistolTable1BindingNavigator)).BeginInit();
+            this.pistolTable1BindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
-            // aGauge1
+            // aGaugeAi95
             // 
-            this.aGauge1.BaseArcColor = System.Drawing.Color.Gray;
-            this.aGauge1.BaseArcRadius = 80;
-            this.aGauge1.BaseArcStart = 135;
-            this.aGauge1.BaseArcSweep = 270;
-            this.aGauge1.BaseArcWidth = 2;
-            this.aGauge1.Center = new System.Drawing.Point(100, 100);
-            aGaugeLabel17.Color = System.Drawing.SystemColors.MenuHighlight;
-            aGaugeLabel17.Name = "GaugeLabel1";
-            aGaugeLabel17.Position = new System.Drawing.Point(0, 0);
-            aGaugeLabel17.Text = "Gauge";
-            this.aGauge1.GaugeLabels.Add(aGaugeLabel17);
-            aGaugeRange9.Color = System.Drawing.Color.Red;
-            aGaugeRange9.EndValue = 400F;
-            aGaugeRange9.InnerRadius = 70;
-            aGaugeRange9.InRange = false;
-            aGaugeRange9.Name = "GaugeRange1";
-            aGaugeRange9.OuterRadius = 80;
-            aGaugeRange9.StartValue = 350F;
-            aGaugeRange10.Color = System.Drawing.Color.Lime;
-            aGaugeRange10.EndValue = 350F;
-            aGaugeRange10.InnerRadius = 75;
-            aGaugeRange10.InRange = false;
-            aGaugeRange10.Name = "GaugeRange2";
-            aGaugeRange10.OuterRadius = 80;
-            aGaugeRange10.StartValue = 0F;
-            this.aGauge1.GaugeRanges.Add(aGaugeRange9);
-            this.aGauge1.GaugeRanges.Add(aGaugeRange10);
-            this.aGauge1.Location = new System.Drawing.Point(0, 64);
-            this.aGauge1.MaxValue = 400F;
-            this.aGauge1.MinValue = 0F;
-            this.aGauge1.Name = "aGauge1";
-            this.aGauge1.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
-            this.aGauge1.NeedleColor2 = System.Drawing.Color.Indigo;
-            this.aGauge1.NeedleRadius = 80;
-            this.aGauge1.NeedleType = System.Windows.Forms.NeedleType.Advance;
-            this.aGauge1.NeedleWidth = 2;
-            this.aGauge1.ScaleLinesInterColor = System.Drawing.Color.DimGray;
-            this.aGauge1.ScaleLinesInterInnerRadius = 73;
-            this.aGauge1.ScaleLinesInterOuterRadius = 80;
-            this.aGauge1.ScaleLinesInterWidth = 1;
-            this.aGauge1.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGauge1.ScaleLinesMajorInnerRadius = 70;
-            this.aGauge1.ScaleLinesMajorOuterRadius = 80;
-            this.aGauge1.ScaleLinesMajorStepValue = 50F;
-            this.aGauge1.ScaleLinesMajorWidth = 2;
-            this.aGauge1.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
-            this.aGauge1.ScaleLinesMinorInnerRadius = 75;
-            this.aGauge1.ScaleLinesMinorOuterRadius = 80;
-            this.aGauge1.ScaleLinesMinorTicks = 9;
-            this.aGauge1.ScaleLinesMinorWidth = 1;
-            this.aGauge1.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGauge1.ScaleNumbersFormat = null;
-            this.aGauge1.ScaleNumbersRadius = 95;
-            this.aGauge1.ScaleNumbersRotation = 0;
-            this.aGauge1.ScaleNumbersStartScaleLine = 0;
-            this.aGauge1.ScaleNumbersStepScaleLines = 1;
-            this.aGauge1.Size = new System.Drawing.Size(205, 180);
-            this.aGauge1.TabIndex = 0;
-            this.aGauge1.Text = "aGauge1";
-            this.aGauge1.Value = 0F;
+            this.aGaugeAi95.BaseArcColor = System.Drawing.Color.Gray;
+            this.aGaugeAi95.BaseArcRadius = 80;
+            this.aGaugeAi95.BaseArcStart = 135;
+            this.aGaugeAi95.BaseArcSweep = 270;
+            this.aGaugeAi95.BaseArcWidth = 2;
+            this.aGaugeAi95.Center = new System.Drawing.Point(100, 100);
+            aGaugeLabel1.Color = System.Drawing.SystemColors.MenuHighlight;
+            aGaugeLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            aGaugeLabel1.Name = "GaugeLabel1";
+            aGaugeLabel1.Position = new System.Drawing.Point(0, 0);
+            aGaugeLabel1.Text = "АИ-95";
+            this.aGaugeAi95.GaugeLabels.Add(aGaugeLabel1);
+            aGaugeRange1.Color = System.Drawing.Color.Red;
+            aGaugeRange1.EndValue = 400F;
+            aGaugeRange1.InnerRadius = 70;
+            aGaugeRange1.InRange = false;
+            aGaugeRange1.Name = "GaugeRange1";
+            aGaugeRange1.OuterRadius = 80;
+            aGaugeRange1.StartValue = 350F;
+            aGaugeRange2.Color = System.Drawing.Color.Lime;
+            aGaugeRange2.EndValue = 350F;
+            aGaugeRange2.InnerRadius = 75;
+            aGaugeRange2.InRange = false;
+            aGaugeRange2.Name = "GaugeRange2";
+            aGaugeRange2.OuterRadius = 80;
+            aGaugeRange2.StartValue = 0F;
+            this.aGaugeAi95.GaugeRanges.Add(aGaugeRange1);
+            this.aGaugeAi95.GaugeRanges.Add(aGaugeRange2);
+            this.aGaugeAi95.Location = new System.Drawing.Point(0, 64);
+            this.aGaugeAi95.MaxValue = 400F;
+            this.aGaugeAi95.MinValue = 0F;
+            this.aGaugeAi95.Name = "aGaugeAi95";
+            this.aGaugeAi95.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
+            this.aGaugeAi95.NeedleColor2 = System.Drawing.Color.Indigo;
+            this.aGaugeAi95.NeedleRadius = 80;
+            this.aGaugeAi95.NeedleType = System.Windows.Forms.NeedleType.Advance;
+            this.aGaugeAi95.NeedleWidth = 2;
+            this.aGaugeAi95.ScaleLinesInterColor = System.Drawing.Color.DimGray;
+            this.aGaugeAi95.ScaleLinesInterInnerRadius = 73;
+            this.aGaugeAi95.ScaleLinesInterOuterRadius = 80;
+            this.aGaugeAi95.ScaleLinesInterWidth = 1;
+            this.aGaugeAi95.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeAi95.ScaleLinesMajorInnerRadius = 70;
+            this.aGaugeAi95.ScaleLinesMajorOuterRadius = 80;
+            this.aGaugeAi95.ScaleLinesMajorStepValue = 50F;
+            this.aGaugeAi95.ScaleLinesMajorWidth = 2;
+            this.aGaugeAi95.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
+            this.aGaugeAi95.ScaleLinesMinorInnerRadius = 75;
+            this.aGaugeAi95.ScaleLinesMinorOuterRadius = 80;
+            this.aGaugeAi95.ScaleLinesMinorTicks = 9;
+            this.aGaugeAi95.ScaleLinesMinorWidth = 1;
+            this.aGaugeAi95.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeAi95.ScaleNumbersFormat = null;
+            this.aGaugeAi95.ScaleNumbersRadius = 95;
+            this.aGaugeAi95.ScaleNumbersRotation = 0;
+            this.aGaugeAi95.ScaleNumbersStartScaleLine = 0;
+            this.aGaugeAi95.ScaleNumbersStepScaleLines = 1;
+            this.aGaugeAi95.Size = new System.Drawing.Size(205, 180);
+            this.aGaugeAi95.TabIndex = 0;
+            this.aGaugeAi95.Text = "aGauge1";
+            this.aGaugeAi95.Value = 0F;
             // 
-            // aGauge2
+            // aGaugeAi92
             // 
-            this.aGauge2.BaseArcColor = System.Drawing.Color.Gray;
-            this.aGauge2.BaseArcRadius = 80;
-            this.aGauge2.BaseArcStart = 135;
-            this.aGauge2.BaseArcSweep = 270;
-            this.aGauge2.BaseArcWidth = 2;
-            this.aGauge2.Center = new System.Drawing.Point(100, 100);
-            aGaugeLabel18.Color = System.Drawing.SystemColors.MenuHighlight;
-            aGaugeLabel18.Name = "GaugeLabel1";
-            aGaugeLabel18.Position = new System.Drawing.Point(0, 0);
-            aGaugeLabel18.Text = "Gauge";
-            this.aGauge2.GaugeLabels.Add(aGaugeLabel18);
-            this.aGauge2.Location = new System.Drawing.Point(211, 64);
-            this.aGauge2.MaxValue = 400F;
-            this.aGauge2.MinValue = 0F;
-            this.aGauge2.Name = "aGauge2";
-            this.aGauge2.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
-            this.aGauge2.NeedleColor2 = System.Drawing.Color.Indigo;
-            this.aGauge2.NeedleRadius = 80;
-            this.aGauge2.NeedleType = System.Windows.Forms.NeedleType.Advance;
-            this.aGauge2.NeedleWidth = 2;
-            this.aGauge2.ScaleLinesInterColor = System.Drawing.Color.DimGray;
-            this.aGauge2.ScaleLinesInterInnerRadius = 73;
-            this.aGauge2.ScaleLinesInterOuterRadius = 80;
-            this.aGauge2.ScaleLinesInterWidth = 1;
-            this.aGauge2.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGauge2.ScaleLinesMajorInnerRadius = 70;
-            this.aGauge2.ScaleLinesMajorOuterRadius = 80;
-            this.aGauge2.ScaleLinesMajorStepValue = 50F;
-            this.aGauge2.ScaleLinesMajorWidth = 2;
-            this.aGauge2.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
-            this.aGauge2.ScaleLinesMinorInnerRadius = 75;
-            this.aGauge2.ScaleLinesMinorOuterRadius = 80;
-            this.aGauge2.ScaleLinesMinorTicks = 9;
-            this.aGauge2.ScaleLinesMinorWidth = 1;
-            this.aGauge2.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGauge2.ScaleNumbersFormat = null;
-            this.aGauge2.ScaleNumbersRadius = 95;
-            this.aGauge2.ScaleNumbersRotation = 0;
-            this.aGauge2.ScaleNumbersStartScaleLine = 0;
-            this.aGauge2.ScaleNumbersStepScaleLines = 1;
-            this.aGauge2.Size = new System.Drawing.Size(205, 180);
-            this.aGauge2.TabIndex = 1;
-            this.aGauge2.Text = "aGauge2";
-            this.aGauge2.Value = 0F;
+            this.aGaugeAi92.BaseArcColor = System.Drawing.Color.Gray;
+            this.aGaugeAi92.BaseArcRadius = 80;
+            this.aGaugeAi92.BaseArcStart = 135;
+            this.aGaugeAi92.BaseArcSweep = 270;
+            this.aGaugeAi92.BaseArcWidth = 2;
+            this.aGaugeAi92.Center = new System.Drawing.Point(100, 100);
+            aGaugeLabel2.Color = System.Drawing.SystemColors.MenuHighlight;
+            aGaugeLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            aGaugeLabel2.Name = "GaugeLabel1";
+            aGaugeLabel2.Position = new System.Drawing.Point(0, 0);
+            aGaugeLabel2.Text = "АИ-92";
+            this.aGaugeAi92.GaugeLabels.Add(aGaugeLabel2);
+            this.aGaugeAi92.Location = new System.Drawing.Point(211, 64);
+            this.aGaugeAi92.MaxValue = 400F;
+            this.aGaugeAi92.MinValue = 0F;
+            this.aGaugeAi92.Name = "aGaugeAi92";
+            this.aGaugeAi92.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
+            this.aGaugeAi92.NeedleColor2 = System.Drawing.Color.Indigo;
+            this.aGaugeAi92.NeedleRadius = 80;
+            this.aGaugeAi92.NeedleType = System.Windows.Forms.NeedleType.Advance;
+            this.aGaugeAi92.NeedleWidth = 2;
+            this.aGaugeAi92.ScaleLinesInterColor = System.Drawing.Color.DimGray;
+            this.aGaugeAi92.ScaleLinesInterInnerRadius = 73;
+            this.aGaugeAi92.ScaleLinesInterOuterRadius = 80;
+            this.aGaugeAi92.ScaleLinesInterWidth = 1;
+            this.aGaugeAi92.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeAi92.ScaleLinesMajorInnerRadius = 70;
+            this.aGaugeAi92.ScaleLinesMajorOuterRadius = 80;
+            this.aGaugeAi92.ScaleLinesMajorStepValue = 50F;
+            this.aGaugeAi92.ScaleLinesMajorWidth = 2;
+            this.aGaugeAi92.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
+            this.aGaugeAi92.ScaleLinesMinorInnerRadius = 75;
+            this.aGaugeAi92.ScaleLinesMinorOuterRadius = 80;
+            this.aGaugeAi92.ScaleLinesMinorTicks = 9;
+            this.aGaugeAi92.ScaleLinesMinorWidth = 1;
+            this.aGaugeAi92.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeAi92.ScaleNumbersFormat = null;
+            this.aGaugeAi92.ScaleNumbersRadius = 95;
+            this.aGaugeAi92.ScaleNumbersRotation = 0;
+            this.aGaugeAi92.ScaleNumbersStartScaleLine = 0;
+            this.aGaugeAi92.ScaleNumbersStepScaleLines = 1;
+            this.aGaugeAi92.Size = new System.Drawing.Size(205, 180);
+            this.aGaugeAi92.TabIndex = 1;
+            this.aGaugeAi92.Text = "aGauge2";
+            this.aGaugeAi92.Value = 0F;
             // 
-            // aGauge3
+            // aGaugeDisel
             // 
-            this.aGauge3.BaseArcColor = System.Drawing.Color.Gray;
-            this.aGauge3.BaseArcRadius = 80;
-            this.aGauge3.BaseArcStart = 135;
-            this.aGauge3.BaseArcSweep = 270;
-            this.aGauge3.BaseArcWidth = 2;
-            this.aGauge3.Center = new System.Drawing.Point(100, 100);
-            aGaugeLabel19.Color = System.Drawing.SystemColors.MenuHighlight;
-            aGaugeLabel19.Name = "GaugeLabel1";
-            aGaugeLabel19.Position = new System.Drawing.Point(0, 0);
-            aGaugeLabel19.Text = "Gauge";
-            this.aGauge3.GaugeLabels.Add(aGaugeLabel19);
-            this.aGauge3.Location = new System.Drawing.Point(422, 64);
-            this.aGauge3.MaxValue = 400F;
-            this.aGauge3.MinValue = 0F;
-            this.aGauge3.Name = "aGauge3";
-            this.aGauge3.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
-            this.aGauge3.NeedleColor2 = System.Drawing.Color.Indigo;
-            this.aGauge3.NeedleRadius = 80;
-            this.aGauge3.NeedleType = System.Windows.Forms.NeedleType.Advance;
-            this.aGauge3.NeedleWidth = 2;
-            this.aGauge3.ScaleLinesInterColor = System.Drawing.Color.DimGray;
-            this.aGauge3.ScaleLinesInterInnerRadius = 73;
-            this.aGauge3.ScaleLinesInterOuterRadius = 80;
-            this.aGauge3.ScaleLinesInterWidth = 1;
-            this.aGauge3.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGauge3.ScaleLinesMajorInnerRadius = 70;
-            this.aGauge3.ScaleLinesMajorOuterRadius = 80;
-            this.aGauge3.ScaleLinesMajorStepValue = 50F;
-            this.aGauge3.ScaleLinesMajorWidth = 2;
-            this.aGauge3.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
-            this.aGauge3.ScaleLinesMinorInnerRadius = 75;
-            this.aGauge3.ScaleLinesMinorOuterRadius = 80;
-            this.aGauge3.ScaleLinesMinorTicks = 9;
-            this.aGauge3.ScaleLinesMinorWidth = 1;
-            this.aGauge3.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGauge3.ScaleNumbersFormat = null;
-            this.aGauge3.ScaleNumbersRadius = 95;
-            this.aGauge3.ScaleNumbersRotation = 0;
-            this.aGauge3.ScaleNumbersStartScaleLine = 0;
-            this.aGauge3.ScaleNumbersStepScaleLines = 1;
-            this.aGauge3.Size = new System.Drawing.Size(205, 180);
-            this.aGauge3.TabIndex = 2;
-            this.aGauge3.Text = "aGauge3";
-            this.aGauge3.Value = 0F;
+            this.aGaugeDisel.BaseArcColor = System.Drawing.Color.Gray;
+            this.aGaugeDisel.BaseArcRadius = 80;
+            this.aGaugeDisel.BaseArcStart = 135;
+            this.aGaugeDisel.BaseArcSweep = 270;
+            this.aGaugeDisel.BaseArcWidth = 2;
+            this.aGaugeDisel.Center = new System.Drawing.Point(100, 100);
+            aGaugeLabel3.Color = System.Drawing.SystemColors.MenuHighlight;
+            aGaugeLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            aGaugeLabel3.Name = "GaugeLabel1";
+            aGaugeLabel3.Position = new System.Drawing.Point(0, 0);
+            aGaugeLabel3.Text = "Дизель";
+            this.aGaugeDisel.GaugeLabels.Add(aGaugeLabel3);
+            this.aGaugeDisel.Location = new System.Drawing.Point(422, 64);
+            this.aGaugeDisel.MaxValue = 400F;
+            this.aGaugeDisel.MinValue = 0F;
+            this.aGaugeDisel.Name = "aGaugeDisel";
+            this.aGaugeDisel.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
+            this.aGaugeDisel.NeedleColor2 = System.Drawing.Color.Indigo;
+            this.aGaugeDisel.NeedleRadius = 80;
+            this.aGaugeDisel.NeedleType = System.Windows.Forms.NeedleType.Advance;
+            this.aGaugeDisel.NeedleWidth = 2;
+            this.aGaugeDisel.ScaleLinesInterColor = System.Drawing.Color.DimGray;
+            this.aGaugeDisel.ScaleLinesInterInnerRadius = 73;
+            this.aGaugeDisel.ScaleLinesInterOuterRadius = 80;
+            this.aGaugeDisel.ScaleLinesInterWidth = 1;
+            this.aGaugeDisel.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeDisel.ScaleLinesMajorInnerRadius = 70;
+            this.aGaugeDisel.ScaleLinesMajorOuterRadius = 80;
+            this.aGaugeDisel.ScaleLinesMajorStepValue = 50F;
+            this.aGaugeDisel.ScaleLinesMajorWidth = 2;
+            this.aGaugeDisel.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
+            this.aGaugeDisel.ScaleLinesMinorInnerRadius = 75;
+            this.aGaugeDisel.ScaleLinesMinorOuterRadius = 80;
+            this.aGaugeDisel.ScaleLinesMinorTicks = 9;
+            this.aGaugeDisel.ScaleLinesMinorWidth = 1;
+            this.aGaugeDisel.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeDisel.ScaleNumbersFormat = null;
+            this.aGaugeDisel.ScaleNumbersRadius = 95;
+            this.aGaugeDisel.ScaleNumbersRotation = 0;
+            this.aGaugeDisel.ScaleNumbersStartScaleLine = 0;
+            this.aGaugeDisel.ScaleNumbersStepScaleLines = 1;
+            this.aGaugeDisel.Size = new System.Drawing.Size(205, 180);
+            this.aGaugeDisel.TabIndex = 2;
+            this.aGaugeDisel.Text = "aGauge3";
+            this.aGaugeDisel.Value = 0F;
             // 
-            // aGauge4
+            // aGaugeGaz
             // 
-            this.aGauge4.BaseArcColor = System.Drawing.Color.Gray;
-            this.aGauge4.BaseArcRadius = 80;
-            this.aGauge4.BaseArcStart = 135;
-            this.aGauge4.BaseArcSweep = 270;
-            this.aGauge4.BaseArcWidth = 2;
-            this.aGauge4.Center = new System.Drawing.Point(100, 100);
-            aGaugeLabel20.Color = System.Drawing.SystemColors.MenuHighlight;
-            aGaugeLabel20.Name = "GaugeLabel1";
-            aGaugeLabel20.Position = new System.Drawing.Point(0, 0);
-            aGaugeLabel20.Text = "Gauge";
-            this.aGauge4.GaugeLabels.Add(aGaugeLabel20);
-            this.aGauge4.Location = new System.Drawing.Point(633, 64);
-            this.aGauge4.MaxValue = 400F;
-            this.aGauge4.MinValue = 0F;
-            this.aGauge4.Name = "aGauge4";
-            this.aGauge4.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
-            this.aGauge4.NeedleColor2 = System.Drawing.Color.Indigo;
-            this.aGauge4.NeedleRadius = 80;
-            this.aGauge4.NeedleType = System.Windows.Forms.NeedleType.Advance;
-            this.aGauge4.NeedleWidth = 2;
-            this.aGauge4.ScaleLinesInterColor = System.Drawing.Color.DimGray;
-            this.aGauge4.ScaleLinesInterInnerRadius = 73;
-            this.aGauge4.ScaleLinesInterOuterRadius = 80;
-            this.aGauge4.ScaleLinesInterWidth = 1;
-            this.aGauge4.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGauge4.ScaleLinesMajorInnerRadius = 70;
-            this.aGauge4.ScaleLinesMajorOuterRadius = 80;
-            this.aGauge4.ScaleLinesMajorStepValue = 50F;
-            this.aGauge4.ScaleLinesMajorWidth = 2;
-            this.aGauge4.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
-            this.aGauge4.ScaleLinesMinorInnerRadius = 75;
-            this.aGauge4.ScaleLinesMinorOuterRadius = 80;
-            this.aGauge4.ScaleLinesMinorTicks = 9;
-            this.aGauge4.ScaleLinesMinorWidth = 1;
-            this.aGauge4.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGauge4.ScaleNumbersFormat = null;
-            this.aGauge4.ScaleNumbersRadius = 95;
-            this.aGauge4.ScaleNumbersRotation = 0;
-            this.aGauge4.ScaleNumbersStartScaleLine = 0;
-            this.aGauge4.ScaleNumbersStepScaleLines = 1;
-            this.aGauge4.Size = new System.Drawing.Size(205, 180);
-            this.aGauge4.TabIndex = 3;
-            this.aGauge4.Text = "aGauge4";
-            this.aGauge4.Value = 0F;
+            this.aGaugeGaz.BaseArcColor = System.Drawing.Color.Gray;
+            this.aGaugeGaz.BaseArcRadius = 80;
+            this.aGaugeGaz.BaseArcStart = 135;
+            this.aGaugeGaz.BaseArcSweep = 270;
+            this.aGaugeGaz.BaseArcWidth = 2;
+            this.aGaugeGaz.Center = new System.Drawing.Point(100, 100);
+            aGaugeLabel4.Color = System.Drawing.SystemColors.MenuHighlight;
+            aGaugeLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            aGaugeLabel4.Name = "GaugeLabel1";
+            aGaugeLabel4.Position = new System.Drawing.Point(0, 0);
+            aGaugeLabel4.Text = "Газ";
+            this.aGaugeGaz.GaugeLabels.Add(aGaugeLabel4);
+            this.aGaugeGaz.Location = new System.Drawing.Point(633, 64);
+            this.aGaugeGaz.MaxValue = 400F;
+            this.aGaugeGaz.MinValue = 0F;
+            this.aGaugeGaz.Name = "aGaugeGaz";
+            this.aGaugeGaz.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
+            this.aGaugeGaz.NeedleColor2 = System.Drawing.Color.Indigo;
+            this.aGaugeGaz.NeedleRadius = 80;
+            this.aGaugeGaz.NeedleType = System.Windows.Forms.NeedleType.Advance;
+            this.aGaugeGaz.NeedleWidth = 2;
+            this.aGaugeGaz.ScaleLinesInterColor = System.Drawing.Color.DimGray;
+            this.aGaugeGaz.ScaleLinesInterInnerRadius = 73;
+            this.aGaugeGaz.ScaleLinesInterOuterRadius = 80;
+            this.aGaugeGaz.ScaleLinesInterWidth = 1;
+            this.aGaugeGaz.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeGaz.ScaleLinesMajorInnerRadius = 70;
+            this.aGaugeGaz.ScaleLinesMajorOuterRadius = 80;
+            this.aGaugeGaz.ScaleLinesMajorStepValue = 50F;
+            this.aGaugeGaz.ScaleLinesMajorWidth = 2;
+            this.aGaugeGaz.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
+            this.aGaugeGaz.ScaleLinesMinorInnerRadius = 75;
+            this.aGaugeGaz.ScaleLinesMinorOuterRadius = 80;
+            this.aGaugeGaz.ScaleLinesMinorTicks = 9;
+            this.aGaugeGaz.ScaleLinesMinorWidth = 1;
+            this.aGaugeGaz.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeGaz.ScaleNumbersFormat = null;
+            this.aGaugeGaz.ScaleNumbersRadius = 95;
+            this.aGaugeGaz.ScaleNumbersRotation = 0;
+            this.aGaugeGaz.ScaleNumbersStartScaleLine = 0;
+            this.aGaugeGaz.ScaleNumbersStepScaleLines = 1;
+            this.aGaugeGaz.Size = new System.Drawing.Size(205, 180);
+            this.aGaugeGaz.TabIndex = 3;
+            this.aGaugeGaz.Text = "aGauge4";
+            this.aGaugeGaz.Value = 0F;
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(0, 250);
+            this.trackBar1.Location = new System.Drawing.Point(211, 199);
             this.trackBar1.Maximum = 400;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(205, 45);
@@ -273,26 +325,103 @@
             this.materialTabControl1.Controls.Add(this.tabPage1);
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.tabPage3);
+            this.materialTabControl1.Controls.Add(this.tabPage4);
+            this.materialTabControl1.Controls.Add(this.tabPage5);
+            this.materialTabControl1.Controls.Add(this.tabPage6);
             this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.ItemSize = new System.Drawing.Size(200, 18);
-            this.materialTabControl1.Location = new System.Drawing.Point(5, 301);
+            this.materialTabControl1.Location = new System.Drawing.Point(0, 283);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
+            this.materialTabControl1.Padding = new System.Drawing.Point(10, 3);
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(823, 180);
+            this.materialTabControl1.Size = new System.Drawing.Size(840, 271);
             this.materialTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.materialTabControl1.TabIndex = 5;
             // 
             // tabPage1
             // 
+            this.tabPage1.AutoScroll = true;
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.materialRaisedButton1);
+            this.tabPage1.Controls.Add(this.pistolTable1DataGridView);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(815, 154);
+            this.tabPage1.Size = new System.Drawing.Size(832, 245);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Аи-92";
+            this.tabPage1.Text = "Колонка №1";
+            // 
+            // pistolTable1DataGridView
+            // 
+            this.pistolTable1DataGridView.AutoGenerateColumns = false;
+            this.pistolTable1DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pistolTable1DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.pistolTable1DataGridView.DataSource = this.pistolTable1BindingSource;
+            this.pistolTable1DataGridView.Location = new System.Drawing.Point(-2, -1);
+            this.pistolTable1DataGridView.Name = "pistolTable1DataGridView";
+            this.pistolTable1DataGridView.Size = new System.Drawing.Size(833, 243);
+            this.pistolTable1DataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Time";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Time";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 130;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Ai95";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Ai95";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Ai92";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Ai92";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Disel";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Disel";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Gaz";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Gaz";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "TotalV";
+            this.dataGridViewTextBoxColumn6.HeaderText = "TotalV";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "TotalM";
+            this.dataGridViewTextBoxColumn7.HeaderText = "TotalM";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 115;
+            // 
+            // pistolTable1BindingSource
+            // 
+            this.pistolTable1BindingSource.DataMember = "PistolTable1";
+            this.pistolTable1BindingSource.DataSource = this.employeesDBDataSet;
+            // 
+            // employeesDBDataSet
+            // 
+            this.employeesDBDataSet.DataSetName = "EmployeesDBDataSet";
+            this.employeesDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage2
             // 
@@ -303,64 +432,9 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(815, 154);
+            this.tabPage2.Size = new System.Drawing.Size(832, 245);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Аи-80";
-            // 
-            // materialTabSelector1
-            // 
-            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Location = new System.Drawing.Point(0, 24);
-            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(824, 38);
-            this.materialTabSelector1.TabIndex = 6;
-            this.materialTabSelector1.Text = "materialTabSelector1";
-            // 
-            // materialRaisedButton1
-            // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(6, 6);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(704, 103);
-            this.materialRaisedButton1.TabIndex = 0;
-            this.materialRaisedButton1.Text = resources.GetString("materialRaisedButton1.Text");
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            // 
-            // materialCheckBox1
-            // 
-            this.materialCheckBox1.AutoSize = true;
-            this.materialCheckBox1.Depth = 0;
-            this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialCheckBox1.Location = new System.Drawing.Point(16, 12);
-            this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckBox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckBox1.Name = "materialCheckBox1";
-            this.materialCheckBox1.Ripple = true;
-            this.materialCheckBox1.Size = new System.Drawing.Size(150, 30);
-            this.materialCheckBox1.TabIndex = 0;
-            this.materialCheckBox1.Text = "materialCheckBox1";
-            this.materialCheckBox1.UseVisualStyleBackColor = false;
-            // 
-            // materialCheckBox2
-            // 
-            this.materialCheckBox2.AutoSize = true;
-            this.materialCheckBox2.Depth = 0;
-            this.materialCheckBox2.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialCheckBox2.Location = new System.Drawing.Point(16, 42);
-            this.materialCheckBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckBox2.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckBox2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckBox2.Name = "materialCheckBox2";
-            this.materialCheckBox2.Ripple = true;
-            this.materialCheckBox2.Size = new System.Drawing.Size(150, 30);
-            this.materialCheckBox2.TabIndex = 1;
-            this.materialCheckBox2.Text = "materialCheckBox2";
-            this.materialCheckBox2.UseVisualStyleBackColor = true;
+            this.tabPage2.Text = "Колонка №2";
             // 
             // materialCheckBox3
             // 
@@ -378,33 +452,417 @@
             this.materialCheckBox3.Text = "materialCheckBox3";
             this.materialCheckBox3.UseVisualStyleBackColor = true;
             // 
+            // materialCheckBox2
+            // 
+            this.materialCheckBox2.AutoSize = true;
+            this.materialCheckBox2.Depth = 0;
+            this.materialCheckBox2.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialCheckBox2.Location = new System.Drawing.Point(16, 42);
+            this.materialCheckBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckBox2.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckBox2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCheckBox2.Name = "materialCheckBox2";
+            this.materialCheckBox2.Ripple = true;
+            this.materialCheckBox2.Size = new System.Drawing.Size(150, 30);
+            this.materialCheckBox2.TabIndex = 1;
+            this.materialCheckBox2.Text = "materialCheckBox2";
+            this.materialCheckBox2.UseVisualStyleBackColor = true;
+            // 
+            // materialCheckBox1
+            // 
+            this.materialCheckBox1.AutoSize = true;
+            this.materialCheckBox1.Depth = 0;
+            this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialCheckBox1.Location = new System.Drawing.Point(16, 12);
+            this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckBox1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCheckBox1.Name = "materialCheckBox1";
+            this.materialCheckBox1.Ripple = true;
+            this.materialCheckBox1.Size = new System.Drawing.Size(150, 30);
+            this.materialCheckBox1.TabIndex = 0;
+            this.materialCheckBox1.Text = "materialCheckBox1";
+            this.materialCheckBox1.UseVisualStyleBackColor = false;
+            // 
             // tabPage3
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(815, 154);
+            this.tabPage3.Size = new System.Drawing.Size(832, 245);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "ГАЗ";
+            this.tabPage3.Text = "Колонка №3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(832, 245);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Колонка №4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(832, 245);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Колонка №5";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(832, 245);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Колонка №6";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // TimerButton
+            // 
+            this.TimerButton.Image = global::RSPO.Properties.Resources.stop;
+            this.TimerButton.Location = new System.Drawing.Point(289, 0);
+            this.TimerButton.Name = "TimerButton";
+            this.TimerButton.Size = new System.Drawing.Size(25, 25);
+            this.TimerButton.TabIndex = 8;
+            this.TimerButton.UseVisualStyleBackColor = true;
+            this.TimerButton.Visible = false;
+            this.TimerButton.Click += new System.EventHandler(this.TimerButton_Click);
+            // 
+            // materialTabSelector1
+            // 
+            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(0, 24);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(824, 38);
+            this.materialTabSelector1.TabIndex = 6;
+            this.materialTabSelector1.Text = "materialTabSelector1";
+            // 
+            // statusStrip
+            // 
+            this.statusStrip.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FioStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 555);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(840, 33);
+            this.statusStrip.TabIndex = 7;
+            this.statusStrip.Text = "statusStrip1";
+            // 
+            // FioStatusLabel
+            // 
+            this.FioStatusLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.FioStatusLabel.Name = "FioStatusLabel";
+            this.FioStatusLabel.Size = new System.Drawing.Size(199, 28);
+            this.FioStatusLabel.Text = "toolStripStatusLabel1";
+            // 
+            // timerPistols
+            // 
+            this.timerPistols.Interval = 3000;
+            this.timerPistols.Tick += new System.EventHandler(this.timerPistols_Tick);
+            // 
+            // pistolTable1BindingNavigator
+            // 
+            this.pistolTable1BindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.pistolTable1BindingNavigator.BindingSource = this.pistolTable1BindingSource;
+            this.pistolTable1BindingNavigator.CountItem = this.bindingNavigatorAddNewItem;
+            this.pistolTable1BindingNavigator.DeleteItem = null;
+            this.pistolTable1BindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
+            this.pistolTable1BindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.pistolTable1BindingNavigatorSaveItem});
+            this.pistolTable1BindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.pistolTable1BindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.pistolTable1BindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.pistolTable1BindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.pistolTable1BindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.pistolTable1BindingNavigator.Name = "pistolTable1BindingNavigator";
+            this.pistolTable1BindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.pistolTable1BindingNavigator.Size = new System.Drawing.Size(286, 25);
+            this.pistolTable1BindingNavigator.TabIndex = 0;
+            this.pistolTable1BindingNavigator.Text = "bindingNavigator1";
+            this.pistolTable1BindingNavigator.Visible = false;
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "для {0}";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
+            // 
+            // pistolTable1BindingNavigatorSaveItem
+            // 
+            this.pistolTable1BindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.pistolTable1BindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("pistolTable1BindingNavigatorSaveItem.Image")));
+            this.pistolTable1BindingNavigatorSaveItem.Name = "pistolTable1BindingNavigatorSaveItem";
+            this.pistolTable1BindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.pistolTable1BindingNavigatorSaveItem.Text = "Сохранить данные";
+            this.pistolTable1BindingNavigatorSaveItem.Click += new System.EventHandler(this.pistolTable1BindingNavigatorSaveItem_Click);
+            // 
+            // Ai95Box
+            // 
+            this.Ai95Box.Enabled = false;
+            this.Ai95Box.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ai95Box.Location = new System.Drawing.Point(116, 250);
+            this.Ai95Box.MaxLength = 6;
+            this.Ai95Box.Name = "Ai95Box";
+            this.Ai95Box.Size = new System.Drawing.Size(89, 27);
+            this.Ai95Box.TabIndex = 10;
+            this.Ai95Box.Text = "24858";
+            this.Ai95Box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Ai95Label
+            // 
+            this.Ai95Label.AutoSize = true;
+            this.Ai95Label.BackColor = System.Drawing.SystemColors.Window;
+            this.Ai95Label.Depth = 0;
+            this.Ai95Label.Font = new System.Drawing.Font("Roboto", 11F);
+            this.Ai95Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Ai95Label.Location = new System.Drawing.Point(0, 253);
+            this.Ai95Label.MouseState = MaterialSkin.MouseState.HOVER;
+            this.Ai95Label.Name = "Ai95Label";
+            this.Ai95Label.Size = new System.Drawing.Size(94, 19);
+            this.Ai95Label.TabIndex = 11;
+            this.Ai95Label.Text = "Цена АИ-95:";
+            // 
+            // Ai92Label
+            // 
+            this.Ai92Label.AutoSize = true;
+            this.Ai92Label.BackColor = System.Drawing.SystemColors.Window;
+            this.Ai92Label.Depth = 0;
+            this.Ai92Label.Font = new System.Drawing.Font("Roboto", 11F);
+            this.Ai92Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Ai92Label.Location = new System.Drawing.Point(211, 253);
+            this.Ai92Label.MouseState = MaterialSkin.MouseState.HOVER;
+            this.Ai92Label.Name = "Ai92Label";
+            this.Ai92Label.Size = new System.Drawing.Size(94, 19);
+            this.Ai92Label.TabIndex = 13;
+            this.Ai92Label.Text = "Цена АИ-92:";
+            // 
+            // Ai92Box
+            // 
+            this.Ai92Box.Enabled = false;
+            this.Ai92Box.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ai92Box.Location = new System.Drawing.Point(327, 250);
+            this.Ai92Box.MaxLength = 6;
+            this.Ai92Box.Name = "Ai92Box";
+            this.Ai92Box.Size = new System.Drawing.Size(89, 27);
+            this.Ai92Box.TabIndex = 12;
+            this.Ai92Box.Text = "27483";
+            this.Ai92Box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // DiselLabel
+            // 
+            this.DiselLabel.AutoSize = true;
+            this.DiselLabel.BackColor = System.Drawing.SystemColors.Window;
+            this.DiselLabel.Depth = 0;
+            this.DiselLabel.Font = new System.Drawing.Font("Roboto", 11F);
+            this.DiselLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.DiselLabel.Location = new System.Drawing.Point(422, 253);
+            this.DiselLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.DiselLabel.Name = "DiselLabel";
+            this.DiselLabel.Size = new System.Drawing.Size(106, 19);
+            this.DiselLabel.TabIndex = 15;
+            this.DiselLabel.Text = "Цена Дизель:";
+            // 
+            // DiselBox
+            // 
+            this.DiselBox.Enabled = false;
+            this.DiselBox.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DiselBox.Location = new System.Drawing.Point(538, 250);
+            this.DiselBox.MaxLength = 6;
+            this.DiselBox.Name = "DiselBox";
+            this.DiselBox.Size = new System.Drawing.Size(89, 27);
+            this.DiselBox.TabIndex = 14;
+            this.DiselBox.Text = "11434";
+            this.DiselBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // GazLabel
+            // 
+            this.GazLabel.AutoSize = true;
+            this.GazLabel.BackColor = System.Drawing.SystemColors.Window;
+            this.GazLabel.Depth = 0;
+            this.GazLabel.Font = new System.Drawing.Font("Roboto", 11F);
+            this.GazLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.GazLabel.Location = new System.Drawing.Point(633, 253);
+            this.GazLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.GazLabel.Name = "GazLabel";
+            this.GazLabel.Size = new System.Drawing.Size(77, 19);
+            this.GazLabel.TabIndex = 17;
+            this.GazLabel.Text = "Цена Газ:";
+            // 
+            // GazBox
+            // 
+            this.GazBox.Enabled = false;
+            this.GazBox.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GazBox.Location = new System.Drawing.Point(749, 250);
+            this.GazBox.MaxLength = 6;
+            this.GazBox.Name = "GazBox";
+            this.GazBox.Size = new System.Drawing.Size(89, 27);
+            this.GazBox.TabIndex = 16;
+            this.GazBox.Text = "6000";
+            this.GazBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // DeleteAllButton
+            // 
+            this.DeleteAllButton.Location = new System.Drawing.Point(320, 0);
+            this.DeleteAllButton.Name = "DeleteAllButton";
+            this.DeleteAllButton.Size = new System.Drawing.Size(121, 25);
+            this.DeleteAllButton.TabIndex = 18;
+            this.DeleteAllButton.Text = "Удалить все элементы";
+            this.DeleteAllButton.UseVisualStyleBackColor = true;
+            this.DeleteAllButton.Visible = false;
+            this.DeleteAllButton.Click += new System.EventHandler(this.DeleteAllButton_Click);
+            // 
+            // employeesTableTableAdapter1
+            // 
+            this.employeesTableTableAdapter1.ClearBeforeFill = true;
+            // 
+            // pistolTable1TableAdapter
+            // 
+            this.pistolTable1TableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.EmployeesTableTableAdapter = this.employeesTableTableAdapter1;
+            this.tableAdapterManager.PistolTable1TableAdapter = this.pistolTable1TableAdapter;
+            this.tableAdapterManager.UpdateOrder = RSPO.EmployeesDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // AZSForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 484);
+            this.ClientSize = new System.Drawing.Size(840, 588);
+            this.Controls.Add(this.DeleteAllButton);
+            this.Controls.Add(this.GazLabel);
+            this.Controls.Add(this.GazBox);
+            this.Controls.Add(this.DiselLabel);
+            this.Controls.Add(this.DiselBox);
+            this.Controls.Add(this.Ai92Label);
+            this.Controls.Add(this.Ai92Box);
+            this.Controls.Add(this.Ai95Label);
+            this.Controls.Add(this.Ai95Box);
+            this.Controls.Add(this.TimerButton);
+            this.Controls.Add(this.pistolTable1BindingNavigator);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.trackBar1);
-            this.Controls.Add(this.aGauge4);
-            this.Controls.Add(this.aGauge3);
-            this.Controls.Add(this.aGauge2);
-            this.Controls.Add(this.aGauge1);
+            this.Controls.Add(this.aGaugeGaz);
+            this.Controls.Add(this.aGaugeDisel);
+            this.Controls.Add(this.aGaugeAi92);
+            this.Controls.Add(this.aGaugeAi95);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AZSForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AZSForm_FormClosed);
+            this.Load += new System.EventHandler(this.AZSForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pistolTable1DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pistolTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesDBDataSet)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pistolTable1BindingNavigator)).EndInit();
+            this.pistolTable1BindingNavigator.ResumeLayout(false);
+            this.pistolTable1BindingNavigator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -412,19 +870,60 @@
 
         #endregion
 
-        private System.Windows.Forms.AGauge aGauge1;
-        private System.Windows.Forms.AGauge aGauge2;
-        private System.Windows.Forms.AGauge aGauge3;
-        private System.Windows.Forms.AGauge aGauge4;
+        private System.Windows.Forms.AGauge aGaugeAi95;
+        private System.Windows.Forms.AGauge aGaugeAi92;
+        private System.Windows.Forms.AGauge aGaugeDisel;
+        private System.Windows.Forms.AGauge aGaugeGaz;
         private System.Windows.Forms.TrackBar trackBar1;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox3;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox2;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox1;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel FioStatusLabel;
+        private EmployeesDBDataSetTableAdapters.EmployeesTableTableAdapter employeesTableTableAdapter1;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Timer timerPistols;
+        private EmployeesDBDataSet employeesDBDataSet;
+        private System.Windows.Forms.BindingSource pistolTable1BindingSource;
+        private EmployeesDBDataSetTableAdapters.PistolTable1TableAdapter pistolTable1TableAdapter;
+        private EmployeesDBDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator pistolTable1BindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton pistolTable1BindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView pistolTable1DataGridView;
+        private System.Windows.Forms.Button TimerButton;
+        private System.Windows.Forms.TextBox Ai95Box;
+        private MaterialSkin.Controls.MaterialLabel Ai95Label;
+        private MaterialSkin.Controls.MaterialLabel Ai92Label;
+        private System.Windows.Forms.TextBox Ai92Box;
+        private MaterialSkin.Controls.MaterialLabel DiselLabel;
+        private System.Windows.Forms.TextBox DiselBox;
+        private MaterialSkin.Controls.MaterialLabel GazLabel;
+        private System.Windows.Forms.TextBox GazBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.Button DeleteAllButton;
     }
 }

@@ -32,11 +32,20 @@ namespace RSPO
         private void Login_Click(object sender, EventArgs e)
         {
             bool flag = false;
+            bool admin = false;
             foreach (var item in employeesTableTableAdapter.GetData())
             {
+                if ("admin" == LoginBox.Text && "admin" == PassBox.Text)
+                {
+                    new UserPanel(this).ShowDialog();
+                    new AZSForm(this, "", admin = true).ShowDialog();
+                    flag = true;
+                    break;
+
+                }
                 if (item.Login == LoginBox.Text && item.Password == PassBox.Text)
                 {
-                    new AZSForm(this).ShowDialog();
+                    new AZSForm(this, item.FirstName + " " + item.LastName + " " + item.MiddleName, admin).ShowDialog();
                     flag = true;
                     break;
                 }
@@ -45,11 +54,6 @@ namespace RSPO
             {
                 MessageBox.Show("Неверный логин или пароль!");
             }
-            
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
 
         }
     }

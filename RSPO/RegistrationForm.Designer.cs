@@ -29,25 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm));
             this.ConfirmRegButton = new MaterialSkin.Controls.MaterialFlatButton();
-            this.PassRegBox = new System.Windows.Forms.TextBox();
             this.employeesTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeesDBDataSet = new RSPO.EmployeesDBDataSet();
-            this.LoginRegBox = new System.Windows.Forms.TextBox();
             this.PasswordRegLabel = new MaterialSkin.Controls.MaterialLabel();
             this.LoginRegLabel = new MaterialSkin.Controls.MaterialLabel();
             this.FIOLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.FirstNameRegBox = new System.Windows.Forms.TextBox();
-            this.LastNameRegBox = new System.Windows.Forms.TextBox();
-            this.MiddleNameRegBox = new System.Windows.Forms.TextBox();
             this.ShiftRegLabel = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.PhotoRegButton = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.PictureRegBox = new System.Windows.Forms.PictureBox();
             this.openFileDialogPhoto = new System.Windows.Forms.OpenFileDialog();
             this.shiftComboBox = new System.Windows.Forms.ComboBox();
             this.employeesTableTableAdapter = new RSPO.EmployeesDBDataSetTableAdapters.EmployeesTableTableAdapter();
             this.tableAdapterManager = new RSPO.EmployeesDBDataSetTableAdapters.TableAdapterManager();
+            this.FirstNameRegBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.LastNameRegBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.MiddleNameRegBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.LoginRegBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.PassRegBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.PictureRegBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.employeesTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureRegBox)).BeginInit();
@@ -69,16 +70,6 @@
             this.ConfirmRegButton.UseVisualStyleBackColor = true;
             this.ConfirmRegButton.Click += new System.EventHandler(this.ConfirmRegButton_Click);
             // 
-            // PassRegBox
-            // 
-            this.PassRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeesTableBindingSource, "Password", true));
-            this.PassRegBox.Location = new System.Drawing.Point(100, 173);
-            this.PassRegBox.MaxLength = 10;
-            this.PassRegBox.Name = "PassRegBox";
-            this.PassRegBox.PasswordChar = '*';
-            this.PassRegBox.Size = new System.Drawing.Size(100, 20);
-            this.PassRegBox.TabIndex = 8;
-            // 
             // employeesTableBindingSource
             // 
             this.employeesTableBindingSource.DataMember = "EmployeesTable";
@@ -88,15 +79,6 @@
             // 
             this.employeesDBDataSet.DataSetName = "EmployeesDBDataSet";
             this.employeesDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // LoginRegBox
-            // 
-            this.LoginRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeesTableBindingSource, "Login", true));
-            this.LoginRegBox.Location = new System.Drawing.Point(100, 133);
-            this.LoginRegBox.MaxLength = 10;
-            this.LoginRegBox.Name = "LoginRegBox";
-            this.LoginRegBox.Size = new System.Drawing.Size(100, 20);
-            this.LoginRegBox.TabIndex = 7;
             // 
             // PasswordRegLabel
             // 
@@ -140,33 +122,6 @@
             this.FIOLabel.TabIndex = 9;
             this.FIOLabel.Text = "ФИО";
             // 
-            // FirstNameRegBox
-            // 
-            this.FirstNameRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeesTableBindingSource, "FirstName", true));
-            this.FirstNameRegBox.Location = new System.Drawing.Point(100, 93);
-            this.FirstNameRegBox.MaxLength = 40;
-            this.FirstNameRegBox.Name = "FirstNameRegBox";
-            this.FirstNameRegBox.Size = new System.Drawing.Size(154, 20);
-            this.FirstNameRegBox.TabIndex = 10;
-            // 
-            // LastNameRegBox
-            // 
-            this.LastNameRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeesTableBindingSource, "LastName", true));
-            this.LastNameRegBox.Location = new System.Drawing.Point(288, 93);
-            this.LastNameRegBox.MaxLength = 40;
-            this.LastNameRegBox.Name = "LastNameRegBox";
-            this.LastNameRegBox.Size = new System.Drawing.Size(154, 20);
-            this.LastNameRegBox.TabIndex = 11;
-            // 
-            // MiddleNameRegBox
-            // 
-            this.MiddleNameRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeesTableBindingSource, "MiddleName", true));
-            this.MiddleNameRegBox.Location = new System.Drawing.Point(477, 93);
-            this.MiddleNameRegBox.MaxLength = 40;
-            this.MiddleNameRegBox.Name = "MiddleNameRegBox";
-            this.MiddleNameRegBox.Size = new System.Drawing.Size(154, 20);
-            this.MiddleNameRegBox.TabIndex = 12;
-            // 
             // ShiftRegLabel
             // 
             this.ShiftRegLabel.AutoSize = true;
@@ -203,22 +158,10 @@
             this.PhotoRegButton.Name = "PhotoRegButton";
             this.PhotoRegButton.Primary = true;
             this.PhotoRegButton.Size = new System.Drawing.Size(75, 23);
-            this.PhotoRegButton.TabIndex = 16;
+            this.PhotoRegButton.TabIndex = 7;
             this.PhotoRegButton.Text = "Обзор...";
             this.PhotoRegButton.UseVisualStyleBackColor = true;
             this.PhotoRegButton.Click += new System.EventHandler(this.PhotoRegButton_Click);
-            // 
-            // PictureRegBox
-            // 
-            this.PictureRegBox.BackColor = System.Drawing.SystemColors.Window;
-            this.PictureRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.employeesTableBindingSource, "Photo", true));
-            this.PictureRegBox.Location = new System.Drawing.Point(240, 132);
-            this.PictureRegBox.MaximumSize = new System.Drawing.Size(398, 210);
-            this.PictureRegBox.Name = "PictureRegBox";
-            this.PictureRegBox.Size = new System.Drawing.Size(398, 210);
-            this.PictureRegBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureRegBox.TabIndex = 17;
-            this.PictureRegBox.TabStop = false;
             // 
             // shiftComboBox
             // 
@@ -231,7 +174,7 @@
             this.shiftComboBox.Location = new System.Drawing.Point(100, 213);
             this.shiftComboBox.Name = "shiftComboBox";
             this.shiftComboBox.Size = new System.Drawing.Size(41, 21);
-            this.shiftComboBox.TabIndex = 19;
+            this.shiftComboBox.TabIndex = 6;
             // 
             // employeesTableTableAdapter
             // 
@@ -241,7 +184,110 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.EmployeesTableTableAdapter = this.employeesTableTableAdapter;
+            this.tableAdapterManager.PistolTable1TableAdapter = null;
             this.tableAdapterManager.UpdateOrder = RSPO.EmployeesDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // FirstNameRegBox
+            // 
+            this.FirstNameRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeesTableBindingSource, "FirstName", true));
+            this.FirstNameRegBox.Depth = 0;
+            this.FirstNameRegBox.Hint = "First Name";
+            this.FirstNameRegBox.Location = new System.Drawing.Point(100, 90);
+            this.FirstNameRegBox.MaxLength = 32767;
+            this.FirstNameRegBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.FirstNameRegBox.Name = "FirstNameRegBox";
+            this.FirstNameRegBox.PasswordChar = '\0';
+            this.FirstNameRegBox.SelectedText = "";
+            this.FirstNameRegBox.SelectionLength = 0;
+            this.FirstNameRegBox.SelectionStart = 0;
+            this.FirstNameRegBox.Size = new System.Drawing.Size(154, 23);
+            this.FirstNameRegBox.TabIndex = 1;
+            this.FirstNameRegBox.TabStop = false;
+            this.FirstNameRegBox.UseSystemPasswordChar = false;
+            // 
+            // LastNameRegBox
+            // 
+            this.LastNameRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeesTableBindingSource, "LastName", true));
+            this.LastNameRegBox.Depth = 0;
+            this.LastNameRegBox.Hint = "Last Name";
+            this.LastNameRegBox.Location = new System.Drawing.Point(288, 90);
+            this.LastNameRegBox.MaxLength = 32767;
+            this.LastNameRegBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LastNameRegBox.Name = "LastNameRegBox";
+            this.LastNameRegBox.PasswordChar = '\0';
+            this.LastNameRegBox.SelectedText = "";
+            this.LastNameRegBox.SelectionLength = 0;
+            this.LastNameRegBox.SelectionStart = 0;
+            this.LastNameRegBox.Size = new System.Drawing.Size(154, 23);
+            this.LastNameRegBox.TabIndex = 2;
+            this.LastNameRegBox.TabStop = false;
+            this.LastNameRegBox.UseSystemPasswordChar = false;
+            // 
+            // MiddleNameRegBox
+            // 
+            this.MiddleNameRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeesTableBindingSource, "MiddleName", true));
+            this.MiddleNameRegBox.Depth = 0;
+            this.MiddleNameRegBox.Hint = "Middle Name";
+            this.MiddleNameRegBox.Location = new System.Drawing.Point(477, 90);
+            this.MiddleNameRegBox.MaxLength = 32767;
+            this.MiddleNameRegBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.MiddleNameRegBox.Name = "MiddleNameRegBox";
+            this.MiddleNameRegBox.PasswordChar = '\0';
+            this.MiddleNameRegBox.SelectedText = "";
+            this.MiddleNameRegBox.SelectionLength = 0;
+            this.MiddleNameRegBox.SelectionStart = 0;
+            this.MiddleNameRegBox.Size = new System.Drawing.Size(154, 23);
+            this.MiddleNameRegBox.TabIndex = 3;
+            this.MiddleNameRegBox.TabStop = false;
+            this.MiddleNameRegBox.UseSystemPasswordChar = false;
+            // 
+            // LoginRegBox
+            // 
+            this.LoginRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeesTableBindingSource, "Login", true));
+            this.LoginRegBox.Depth = 0;
+            this.LoginRegBox.Hint = "Login";
+            this.LoginRegBox.Location = new System.Drawing.Point(100, 132);
+            this.LoginRegBox.MaxLength = 32767;
+            this.LoginRegBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LoginRegBox.Name = "LoginRegBox";
+            this.LoginRegBox.PasswordChar = '\0';
+            this.LoginRegBox.SelectedText = "";
+            this.LoginRegBox.SelectionLength = 0;
+            this.LoginRegBox.SelectionStart = 0;
+            this.LoginRegBox.Size = new System.Drawing.Size(100, 23);
+            this.LoginRegBox.TabIndex = 4;
+            this.LoginRegBox.TabStop = false;
+            this.LoginRegBox.UseSystemPasswordChar = false;
+            // 
+            // PassRegBox
+            // 
+            this.PassRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeesTableBindingSource, "Password", true));
+            this.PassRegBox.Depth = 0;
+            this.PassRegBox.Hint = "Password";
+            this.PassRegBox.Location = new System.Drawing.Point(100, 170);
+            this.PassRegBox.MaxLength = 32767;
+            this.PassRegBox.MouseState = MaterialSkin.MouseState.HOVER;
+            this.PassRegBox.Name = "PassRegBox";
+            this.PassRegBox.PasswordChar = '\0';
+            this.PassRegBox.SelectedText = "";
+            this.PassRegBox.SelectionLength = 0;
+            this.PassRegBox.SelectionStart = 0;
+            this.PassRegBox.Size = new System.Drawing.Size(100, 23);
+            this.PassRegBox.TabIndex = 5;
+            this.PassRegBox.TabStop = false;
+            this.PassRegBox.UseSystemPasswordChar = true;
+            // 
+            // PictureRegBox
+            // 
+            this.PictureRegBox.BackColor = System.Drawing.SystemColors.Window;
+            this.PictureRegBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.employeesTableBindingSource, "Photo", true));
+            this.PictureRegBox.Location = new System.Drawing.Point(240, 132);
+            this.PictureRegBox.MaximumSize = new System.Drawing.Size(398, 210);
+            this.PictureRegBox.Name = "PictureRegBox";
+            this.PictureRegBox.Size = new System.Drawing.Size(398, 210);
+            this.PictureRegBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureRegBox.TabIndex = 17;
+            this.PictureRegBox.TabStop = false;
             // 
             // RegistrationForm
             // 
@@ -249,20 +295,21 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 402);
+            this.Controls.Add(this.PassRegBox);
+            this.Controls.Add(this.LoginRegBox);
+            this.Controls.Add(this.MiddleNameRegBox);
+            this.Controls.Add(this.LastNameRegBox);
+            this.Controls.Add(this.FirstNameRegBox);
             this.Controls.Add(this.shiftComboBox);
             this.Controls.Add(this.PictureRegBox);
             this.Controls.Add(this.PhotoRegButton);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.ShiftRegLabel);
-            this.Controls.Add(this.MiddleNameRegBox);
-            this.Controls.Add(this.LastNameRegBox);
-            this.Controls.Add(this.FirstNameRegBox);
             this.Controls.Add(this.FIOLabel);
-            this.Controls.Add(this.PassRegBox);
-            this.Controls.Add(this.LoginRegBox);
             this.Controls.Add(this.PasswordRegLabel);
             this.Controls.Add(this.LoginRegLabel);
             this.Controls.Add(this.ConfirmRegButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RegistrationForm";
@@ -281,14 +328,9 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialFlatButton ConfirmRegButton;
-        private System.Windows.Forms.TextBox PassRegBox;
-        private System.Windows.Forms.TextBox LoginRegBox;
         private MaterialSkin.Controls.MaterialLabel PasswordRegLabel;
         private MaterialSkin.Controls.MaterialLabel LoginRegLabel;
         private MaterialSkin.Controls.MaterialLabel FIOLabel;
-        private System.Windows.Forms.TextBox FirstNameRegBox;
-        private System.Windows.Forms.TextBox LastNameRegBox;
-        private System.Windows.Forms.TextBox MiddleNameRegBox;
         private MaterialSkin.Controls.MaterialLabel ShiftRegLabel;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialRaisedButton PhotoRegButton;
@@ -299,5 +341,10 @@
         private EmployeesDBDataSetTableAdapters.EmployeesTableTableAdapter employeesTableTableAdapter;
         private EmployeesDBDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.ComboBox shiftComboBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField FirstNameRegBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField LastNameRegBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField MiddleNameRegBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField LoginRegBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField PassRegBox;
     }
 }
