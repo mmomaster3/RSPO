@@ -14,25 +14,34 @@ namespace RSPO
 {
     public partial class AZSForm : MaterialForm
     {
-        MainForm MF2;
+        MainForm MF;
+        DateTime BeginWork = DateTime.Now;
+        EmployeesDBDataSet.EmployeesTableRow colum;
 
-        public AZSForm(MainForm MF, string login, bool admin)
+        private static bool sellAi95, sellAi92, sellGaz, sellDisel;
+        bool admin = false;
+
+        public AZSForm(MainForm MF)
         {
             InitializeComponent();
 
-            MaterialTabSelector.TAB_HEADER_PADDING = 26;
-            this.MaximumSize = new Size(841, 600);
-            this.MinimumSize = new Size(841, 600);
-
-            MF2 = MF;
+            this.MF = MF;
             MF.Hide();
 
+            sellAi95 = true;
+            sellAi92 = true;
+            sellGaz = true;
+            sellDisel = true;
+
+            MaterialTabSelector.TAB_HEADER_PADDING = 180;
+            this.MaximumSize = new Size(841, 600);
+            this.MinimumSize = new Size(841, 600);
             this.MaximizeBox = false;
 
             AGaugeRange LowRange = new AGaugeRange(Color.Lime, 0, 350, 75, 80);
             AGaugeRange HighRange = new AGaugeRange(Color.Red, 350, 400, 70, 80);
 
-            var CC = this.Controls;
+            var CC = tabPage1.Controls;
             Random r = new Random();
             foreach (var control in CC)
             {
@@ -42,9 +51,22 @@ namespace RSPO
                     (control as AGauge).GaugeRanges.Add(HighRange);
 
                     (control as AGauge).Value = r.Next(20, 400);
-
                 }
-                if (admin)
+            }
+
+
+        }
+
+        public AZSForm(MainForm MF, bool admin) : this(MF)
+        {
+            this.admin = admin;
+            timerPistols.Stop();
+            TimerButton.Image = Properties.Resources.play_button;
+
+            var CC = tabPage1.Controls;
+            if (admin)
+            {
+                foreach (var control in CC)
                 {
                     if (control is TextBox)
                     {
@@ -56,35 +78,70 @@ namespace RSPO
                         (control as Button).Visible = true;
                     }
                 }
-            }
-
-            FioStatusLabel.Text = admin == false ? "Работник: " + login : "GODMOD";
-            if (admin)
-            {
+                FioStatusLabel.Text = "GODMOD";
                 pistolTable1BindingNavigator.Visible = true;
-
             }
-            timerPistols.Start();
         }
 
-        private void trackBar1_Scroll(object sender, EventArgs e)
+        public AZSForm(MainForm MF, EmployeesDBDataSet.EmployeesTableRow colum) : this(MF)
         {
-            aGaugeAi95.Value = trackBar1.Value;
+            this.colum = colum;
+            timerPistols.Start();
+            FioStatusLabel.Text = "Работник: " + this.colum.FirstName + " " + this.colum.LastName + " " + this.colum.MiddleName;
+            pistolTable1BindingNavigator.Visible = false;
         }
 
         private void AZSForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            timerPistols.Stop();
-            MF2.Show();
-        }
+            if (!admin)
+            {
+                DateTime EndWork = DateTime.Now;
+                TimeSpan raz = EndWork - BeginWork;
+                this.colum.WorkTime = (int)raz.TotalMinutes;
 
-        private static bool sellAi95 = true;
-        private static bool sellAi92 = true;
-        private static bool sellGaz = true;
-        private static bool sellDisel = true;
+                decimal totalM = 0;
+                foreach (var tabelItem in pistolTable1TableAdapter.GetData())
+                {
+                    totalM += tabelItem.TotalM;
+                }
+
+                this.colum.Money = totalM;
+                employeesTableTableAdapter1.Update(this.colum);
+            }
+            timerPistols.Stop();
+            this.MF.Show();
+        }
 
         private void timerPistols_Tick(object sender, EventArgs e)
         {
+
+            if (sellAi92 == false && sellAi95 == false && sellDisel == false && sellGaz == false)
+            {
+                timerPistols.Stop();
+                if (!admin)
+                {
+                    var result = MessageBox.Show(@"Если не начнешь продавать бензин, то лишишься работы!
+Заправить все колонки?", "БОСС вами не доволен", MessageBoxButtons.YesNo);
+                    if (result == DialogResult.No)
+                    {
+                        MessageBox.Show("Вы уволены!", "БОСС");
+                        Application.Exit();
+                    }
+                    else
+                    {
+                        aGaugeAi95.Value = aGaugeAi95.MaxValue;
+                        sellAi95 = true;
+                        aGaugeAi92.Value = aGaugeAi92.MaxValue;
+                        sellAi92 = true;
+                        aGaugeDisel.Value = aGaugeDisel.MaxValue;
+                        sellDisel = true;
+                        aGaugeGaz.Value = aGaugeGaz.MaxValue;
+                        sellGaz = true;
+                        MessageBox.Show("Молодец, так и продолжай работать!", "БОСС вами доволен");
+                    }
+                }
+            }
+
             if (aGaugeAi95.Value < 5 && sellAi95)
             {
                 timerPistols.Stop();
@@ -94,20 +151,83 @@ namespace RSPO
                     MessageBox.Show(":(");
                     sellAi95 = false;
                 }
+                else
+                {
+                    aGaugeAi95.Value = aGaugeAi95.MaxValue;
+                    MessageBox.Show("Отлично! Бак полон!");
+                    sellAi95 = true;
+                }
                 timerPistols.Start();
             }
 
+            if (aGaugeAi92.Value < 5 && sellAi92)
+            {
+                timerPistols.Stop();
+                var result = MessageBox.Show("Бензин АИ-92 закончился надо заказывать. Подтвердить покупку?", "АИ-92", MessageBoxButtons.YesNo);
+                if (result == DialogResult.No)
+                {
+                    MessageBox.Show(":(");
+                    sellAi92 = false;
+                }
+                else
+                {
+                    aGaugeAi92.Value = aGaugeAi92.MaxValue;
+                    MessageBox.Show("Отлично! Бак полон!");
+                    sellAi92 = true;
+                }
+                timerPistols.Start();
+            }
+
+            if (aGaugeDisel.Value < 5 && sellDisel)
+            {
+                timerPistols.Stop();
+                var result = MessageBox.Show("Дизель закончился надо заказывать. Подтвердить покупку?", "Дизель", MessageBoxButtons.YesNo);
+                if (result == DialogResult.No)
+                {
+                    MessageBox.Show(":(");
+                    sellDisel = false;
+                }
+                else
+                {
+                    aGaugeDisel.Value = aGaugeDisel.MaxValue;
+                    MessageBox.Show("Отлично! Бак полон!");
+                    sellDisel = true;
+                }
+                timerPistols.Start();
+            }
+
+            if (aGaugeGaz.Value < 5 && sellGaz)
+            {
+                timerPistols.Stop();
+                var result = MessageBox.Show("ГАЗ закончился надо заказывать. Подтвердить покупку?", "Газ", MessageBoxButtons.YesNo);
+                if (result == DialogResult.No)
+                {
+                    MessageBox.Show(":(");
+                    sellGaz = false;
+                }
+                else
+                {
+                    aGaugeGaz.Value = aGaugeGaz.MaxValue;
+                    MessageBox.Show("Отлично! Бак полон!");
+                    sellGaz = true;
+                }
+                timerPistols.Start();
+            }
+
+
             Random r = new Random();
-            int Ai95 = r.Next(0, 40);
-            int Ai92 = r.Next(0, 40);
-            int Disel = r.Next(0, 40);
-            int Gaz = r.Next(0, 40);
+            int Ai95 = sellAi95 == true ? r.Next(0, 40) : 0;
+            int Ai92 = sellAi92 == true ? r.Next(0, 40) : 0;
+            int Disel = sellDisel == true ? r.Next(0, 40) : 0;
+            int Gaz = sellGaz == true ? r.Next(0, 40) : 0;
+            byte dispenser = (byte)r.Next(1, 6);
+
             aGaugeAi95.Value -= Ai95;
             aGaugeAi92.Value -= Ai92;
             aGaugeDisel.Value -= Disel;
             aGaugeGaz.Value -= Gaz;
 
-            pistolTable1TableAdapter.Insert(DateTime.Now, Ai95, Ai92, Disel, Gaz, (Ai95 + Ai92 + Disel + Gaz), (Ai95 * int.Parse(Ai95Box.Text) + Ai92 * int.Parse(Ai92Box.Text) + Disel * int.Parse(DiselBox.Text) + Gaz * int.Parse(GazBox.Text)));
+            pistolTable1TableAdapter.Insert(DateTime.Now, Ai95, Ai92, Disel, Gaz, (Ai95 + Ai92 + Disel + Gaz), (Ai95 * int.Parse(Ai95Box.Text) + Ai92 * int.Parse(Ai92Box.Text) + Disel * int.Parse(DiselBox.Text) + Gaz * int.Parse(GazBox.Text)), dispenser);
             pistolTable1TableAdapter.Fill(this.employeesDBDataSet.PistolTable1);
 
             pistolTable1BindingSource.MoveLast();
@@ -125,6 +245,7 @@ namespace RSPO
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "employeesDBDataSet.PistolTable1". При необходимости она может быть перемещена или удалена.
             this.pistolTable1TableAdapter.Fill(this.employeesDBDataSet.PistolTable1);
+            DeleteAll();
         }
 
         private void TimerButton_Click(object sender, EventArgs e)
@@ -143,18 +264,23 @@ namespace RSPO
 
         private void DeleteAllButton_Click(object sender, EventArgs e)
         {
-            foreach (var field in pistolTable1TableAdapter.GetData())
-            {
-                pistolTable1BindingSource.RemoveCurrent();
-            }
-            pistolTable1TableAdapter.Update(this.employeesDBDataSet);
+            DeleteAll();
+        }
+
+        private void DeleteAll()
+        {
+            if (pistolTable1TableAdapter.GetData().Any())
+                foreach (var field in pistolTable1TableAdapter.GetData())
+                {
+                    pistolTable1BindingSource.RemoveCurrent();
+                }
+            pistolTable1TableAdapter.Update(this.employeesDBDataSet.PistolTable1);
         }
 
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
         {
             pistolTable1BindingSource.RemoveCurrent();
-            pistolTable1TableAdapter.Update(employeesDBDataSet.PistolTable1);//try
-            this.pistolTable1TableAdapter.Fill(this.employeesDBDataSet.PistolTable1);
+            pistolTable1TableAdapter.Update(employeesDBDataSet.PistolTable1);
         }
     }
 }

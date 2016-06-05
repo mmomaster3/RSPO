@@ -72,7 +72,7 @@
             this.PassBox.Depth = 0;
             this.PassBox.Hint = "Password";
             this.PassBox.Location = new System.Drawing.Point(81, 140);
-            this.PassBox.MaxLength = 32767;
+            this.PassBox.MaxLength = 10;
             this.PassBox.MouseState = MaterialSkin.MouseState.HOVER;
             this.PassBox.Name = "PassBox";
             this.PassBox.PasswordChar = '\0';
@@ -81,6 +81,7 @@
             this.PassBox.SelectionStart = 0;
             this.PassBox.Size = new System.Drawing.Size(182, 23);
             this.PassBox.TabIndex = 2;
+            this.PassBox.TabStop = false;
             this.PassBox.UseSystemPasswordChar = true;
             // 
             // LoginBox
@@ -90,7 +91,7 @@
             this.LoginBox.Depth = 0;
             this.LoginBox.Hint = "Login";
             this.LoginBox.Location = new System.Drawing.Point(81, 94);
-            this.LoginBox.MaxLength = 32767;
+            this.LoginBox.MaxLength = 10;
             this.LoginBox.MouseState = MaterialSkin.MouseState.HOVER;
             this.LoginBox.Name = "LoginBox";
             this.LoginBox.PasswordChar = '\0';
@@ -99,6 +100,7 @@
             this.LoginBox.SelectionStart = 0;
             this.LoginBox.Size = new System.Drawing.Size(182, 23);
             this.LoginBox.TabIndex = 1;
+            this.LoginBox.TabStop = false;
             this.LoginBox.UseSystemPasswordChar = false;
             // 
             // Login

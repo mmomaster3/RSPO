@@ -31,29 +31,25 @@ namespace RSPO
 
         private void Login_Click(object sender, EventArgs e)
         {
-            bool flag = false;
             bool admin = false;
+
+            if ("admin" == LoginBox.Text && "admin" == PassBox.Text)
+            {
+                new UserPanel(this).ShowDialog();
+                admin = true;
+                new AZSForm(this, admin).ShowDialog();
+                return;
+            }
+
             foreach (var item in employeesTableTableAdapter.GetData())
             {
-                if ("admin" == LoginBox.Text && "admin" == PassBox.Text)
-                {
-                    new UserPanel(this).ShowDialog();
-                    new AZSForm(this, "", admin = true).ShowDialog();
-                    flag = true;
-                    break;
-
-                }
                 if (item.Login == LoginBox.Text && item.Password == PassBox.Text)
                 {
-                    new AZSForm(this, item.FirstName + " " + item.LastName + " " + item.MiddleName, admin).ShowDialog();
-                    flag = true;
-                    break;
+                    new AZSForm(this, item).ShowDialog();
+                    return;
                 }
             }
-            if (!flag)
-            {
-                MessageBox.Show("Неверный логин или пароль!");
-            }
+            MessageBox.Show("Неверный логин или пароль!");
 
         }
     }

@@ -20,8 +20,6 @@ namespace RSPO
             InitializeComponent();
             MF2 = MF;
             MF.Hide();
-
-
         }
 
         private void RegistrationForm_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)

@@ -193,7 +193,7 @@
             this.FirstNameRegBox.Depth = 0;
             this.FirstNameRegBox.Hint = "First Name";
             this.FirstNameRegBox.Location = new System.Drawing.Point(100, 90);
-            this.FirstNameRegBox.MaxLength = 32767;
+            this.FirstNameRegBox.MaxLength = 50;
             this.FirstNameRegBox.MouseState = MaterialSkin.MouseState.HOVER;
             this.FirstNameRegBox.Name = "FirstNameRegBox";
             this.FirstNameRegBox.PasswordChar = '\0';
@@ -211,7 +211,7 @@
             this.LastNameRegBox.Depth = 0;
             this.LastNameRegBox.Hint = "Last Name";
             this.LastNameRegBox.Location = new System.Drawing.Point(288, 90);
-            this.LastNameRegBox.MaxLength = 32767;
+            this.LastNameRegBox.MaxLength = 50;
             this.LastNameRegBox.MouseState = MaterialSkin.MouseState.HOVER;
             this.LastNameRegBox.Name = "LastNameRegBox";
             this.LastNameRegBox.PasswordChar = '\0';
@@ -229,7 +229,7 @@
             this.MiddleNameRegBox.Depth = 0;
             this.MiddleNameRegBox.Hint = "Middle Name";
             this.MiddleNameRegBox.Location = new System.Drawing.Point(477, 90);
-            this.MiddleNameRegBox.MaxLength = 32767;
+            this.MiddleNameRegBox.MaxLength = 50;
             this.MiddleNameRegBox.MouseState = MaterialSkin.MouseState.HOVER;
             this.MiddleNameRegBox.Name = "MiddleNameRegBox";
             this.MiddleNameRegBox.PasswordChar = '\0';
@@ -247,7 +247,7 @@
             this.LoginRegBox.Depth = 0;
             this.LoginRegBox.Hint = "Login";
             this.LoginRegBox.Location = new System.Drawing.Point(100, 132);
-            this.LoginRegBox.MaxLength = 32767;
+            this.LoginRegBox.MaxLength = 10;
             this.LoginRegBox.MouseState = MaterialSkin.MouseState.HOVER;
             this.LoginRegBox.Name = "LoginRegBox";
             this.LoginRegBox.PasswordChar = '\0';
@@ -265,7 +265,7 @@
             this.PassRegBox.Depth = 0;
             this.PassRegBox.Hint = "Password";
             this.PassRegBox.Location = new System.Drawing.Point(100, 170);
-            this.PassRegBox.MaxLength = 32767;
+            this.PassRegBox.MaxLength = 10;
             this.PassRegBox.MouseState = MaterialSkin.MouseState.HOVER;
             this.PassRegBox.Name = "PassRegBox";
             this.PassRegBox.PasswordChar = '\0';

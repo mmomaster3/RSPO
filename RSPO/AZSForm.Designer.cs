@@ -30,39 +30,31 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.AGaugeLabel aGaugeLabel1 = new System.Windows.Forms.AGaugeLabel();
+            System.Windows.Forms.AGaugeLabel aGaugeLabel2 = new System.Windows.Forms.AGaugeLabel();
             System.Windows.Forms.AGaugeRange aGaugeRange1 = new System.Windows.Forms.AGaugeRange();
             System.Windows.Forms.AGaugeRange aGaugeRange2 = new System.Windows.Forms.AGaugeRange();
-            System.Windows.Forms.AGaugeLabel aGaugeLabel2 = new System.Windows.Forms.AGaugeLabel();
             System.Windows.Forms.AGaugeLabel aGaugeLabel3 = new System.Windows.Forms.AGaugeLabel();
             System.Windows.Forms.AGaugeLabel aGaugeLabel4 = new System.Windows.Forms.AGaugeLabel();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AZSForm));
-            this.aGaugeAi95 = new System.Windows.Forms.AGauge();
-            this.aGaugeAi92 = new System.Windows.Forms.AGauge();
-            this.aGaugeDisel = new System.Windows.Forms.AGauge();
-            this.aGaugeGaz = new System.Windows.Forms.AGauge();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.pistolTable1DataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pistolTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeesDBDataSet = new RSPO.EmployeesDBDataSet();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.materialCheckBox3 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.materialCheckBox2 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.materialCheckBox1 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.TimerButton = new System.Windows.Forms.Button();
-            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.pistolTable1DataGridView = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.aGaugeDisel = new System.Windows.Forms.AGauge();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.aGaugeAi95 = new System.Windows.Forms.AGauge();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.aGaugeAi92 = new System.Windows.Forms.AGauge();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.aGaugeGaz = new System.Windows.Forms.AGauge();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.FioStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.timerPistols = new System.Windows.Forms.Timer(this.components);
@@ -79,141 +71,143 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.pistolTable1BindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.Ai95Box = new System.Windows.Forms.TextBox();
-            this.Ai95Label = new MaterialSkin.Controls.MaterialLabel();
-            this.Ai92Label = new MaterialSkin.Controls.MaterialLabel();
-            this.Ai92Box = new System.Windows.Forms.TextBox();
-            this.DiselLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.DiselBox = new System.Windows.Forms.TextBox();
-            this.GazLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.GazBox = new System.Windows.Forms.TextBox();
             this.DeleteAllButton = new System.Windows.Forms.Button();
             this.employeesTableTableAdapter1 = new RSPO.EmployeesDBDataSetTableAdapters.EmployeesTableTableAdapter();
             this.pistolTable1TableAdapter = new RSPO.EmployeesDBDataSetTableAdapters.PistolTable1TableAdapter();
             this.tableAdapterManager = new RSPO.EmployeesDBDataSetTableAdapters.TableAdapterManager();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.employeesTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.GazBox = new System.Windows.Forms.TextBox();
+            this.DiselLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.DiselBox = new System.Windows.Forms.TextBox();
+            this.Ai92Label = new MaterialSkin.Controls.MaterialLabel();
+            this.Ai92Box = new System.Windows.Forms.TextBox();
+            this.Ai95Label = new MaterialSkin.Controls.MaterialLabel();
+            this.Ai95Box = new System.Windows.Forms.TextBox();
+            this.GazLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.Dispenser = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.pistolTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesDBDataSet)).BeginInit();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pistolTable1DataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pistolTable1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeesDBDataSet)).BeginInit();
-            this.tabPage2.SuspendLayout();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pistolTable1BindingNavigator)).BeginInit();
             this.pistolTable1BindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // aGaugeAi95
+            // pistolTable1BindingSource
             // 
-            this.aGaugeAi95.BaseArcColor = System.Drawing.Color.Gray;
-            this.aGaugeAi95.BaseArcRadius = 80;
-            this.aGaugeAi95.BaseArcStart = 135;
-            this.aGaugeAi95.BaseArcSweep = 270;
-            this.aGaugeAi95.BaseArcWidth = 2;
-            this.aGaugeAi95.Center = new System.Drawing.Point(100, 100);
-            aGaugeLabel1.Color = System.Drawing.SystemColors.MenuHighlight;
-            aGaugeLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            aGaugeLabel1.Name = "GaugeLabel1";
-            aGaugeLabel1.Position = new System.Drawing.Point(0, 0);
-            aGaugeLabel1.Text = "АИ-95";
-            this.aGaugeAi95.GaugeLabels.Add(aGaugeLabel1);
-            aGaugeRange1.Color = System.Drawing.Color.Red;
-            aGaugeRange1.EndValue = 400F;
-            aGaugeRange1.InnerRadius = 70;
-            aGaugeRange1.InRange = false;
-            aGaugeRange1.Name = "GaugeRange1";
-            aGaugeRange1.OuterRadius = 80;
-            aGaugeRange1.StartValue = 350F;
-            aGaugeRange2.Color = System.Drawing.Color.Lime;
-            aGaugeRange2.EndValue = 350F;
-            aGaugeRange2.InnerRadius = 75;
-            aGaugeRange2.InRange = false;
-            aGaugeRange2.Name = "GaugeRange2";
-            aGaugeRange2.OuterRadius = 80;
-            aGaugeRange2.StartValue = 0F;
-            this.aGaugeAi95.GaugeRanges.Add(aGaugeRange1);
-            this.aGaugeAi95.GaugeRanges.Add(aGaugeRange2);
-            this.aGaugeAi95.Location = new System.Drawing.Point(0, 64);
-            this.aGaugeAi95.MaxValue = 400F;
-            this.aGaugeAi95.MinValue = 0F;
-            this.aGaugeAi95.Name = "aGaugeAi95";
-            this.aGaugeAi95.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
-            this.aGaugeAi95.NeedleColor2 = System.Drawing.Color.Indigo;
-            this.aGaugeAi95.NeedleRadius = 80;
-            this.aGaugeAi95.NeedleType = System.Windows.Forms.NeedleType.Advance;
-            this.aGaugeAi95.NeedleWidth = 2;
-            this.aGaugeAi95.ScaleLinesInterColor = System.Drawing.Color.DimGray;
-            this.aGaugeAi95.ScaleLinesInterInnerRadius = 73;
-            this.aGaugeAi95.ScaleLinesInterOuterRadius = 80;
-            this.aGaugeAi95.ScaleLinesInterWidth = 1;
-            this.aGaugeAi95.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGaugeAi95.ScaleLinesMajorInnerRadius = 70;
-            this.aGaugeAi95.ScaleLinesMajorOuterRadius = 80;
-            this.aGaugeAi95.ScaleLinesMajorStepValue = 50F;
-            this.aGaugeAi95.ScaleLinesMajorWidth = 2;
-            this.aGaugeAi95.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
-            this.aGaugeAi95.ScaleLinesMinorInnerRadius = 75;
-            this.aGaugeAi95.ScaleLinesMinorOuterRadius = 80;
-            this.aGaugeAi95.ScaleLinesMinorTicks = 9;
-            this.aGaugeAi95.ScaleLinesMinorWidth = 1;
-            this.aGaugeAi95.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGaugeAi95.ScaleNumbersFormat = null;
-            this.aGaugeAi95.ScaleNumbersRadius = 95;
-            this.aGaugeAi95.ScaleNumbersRotation = 0;
-            this.aGaugeAi95.ScaleNumbersStartScaleLine = 0;
-            this.aGaugeAi95.ScaleNumbersStepScaleLines = 1;
-            this.aGaugeAi95.Size = new System.Drawing.Size(205, 180);
-            this.aGaugeAi95.TabIndex = 0;
-            this.aGaugeAi95.Text = "aGauge1";
-            this.aGaugeAi95.Value = 0F;
+            this.pistolTable1BindingSource.DataMember = "PistolTable1";
+            this.pistolTable1BindingSource.DataSource = this.employeesDBDataSet;
             // 
-            // aGaugeAi92
+            // employeesDBDataSet
             // 
-            this.aGaugeAi92.BaseArcColor = System.Drawing.Color.Gray;
-            this.aGaugeAi92.BaseArcRadius = 80;
-            this.aGaugeAi92.BaseArcStart = 135;
-            this.aGaugeAi92.BaseArcSweep = 270;
-            this.aGaugeAi92.BaseArcWidth = 2;
-            this.aGaugeAi92.Center = new System.Drawing.Point(100, 100);
-            aGaugeLabel2.Color = System.Drawing.SystemColors.MenuHighlight;
-            aGaugeLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            aGaugeLabel2.Name = "GaugeLabel1";
-            aGaugeLabel2.Position = new System.Drawing.Point(0, 0);
-            aGaugeLabel2.Text = "АИ-92";
-            this.aGaugeAi92.GaugeLabels.Add(aGaugeLabel2);
-            this.aGaugeAi92.Location = new System.Drawing.Point(211, 64);
-            this.aGaugeAi92.MaxValue = 400F;
-            this.aGaugeAi92.MinValue = 0F;
-            this.aGaugeAi92.Name = "aGaugeAi92";
-            this.aGaugeAi92.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
-            this.aGaugeAi92.NeedleColor2 = System.Drawing.Color.Indigo;
-            this.aGaugeAi92.NeedleRadius = 80;
-            this.aGaugeAi92.NeedleType = System.Windows.Forms.NeedleType.Advance;
-            this.aGaugeAi92.NeedleWidth = 2;
-            this.aGaugeAi92.ScaleLinesInterColor = System.Drawing.Color.DimGray;
-            this.aGaugeAi92.ScaleLinesInterInnerRadius = 73;
-            this.aGaugeAi92.ScaleLinesInterOuterRadius = 80;
-            this.aGaugeAi92.ScaleLinesInterWidth = 1;
-            this.aGaugeAi92.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.aGaugeAi92.ScaleLinesMajorInnerRadius = 70;
-            this.aGaugeAi92.ScaleLinesMajorOuterRadius = 80;
-            this.aGaugeAi92.ScaleLinesMajorStepValue = 50F;
-            this.aGaugeAi92.ScaleLinesMajorWidth = 2;
-            this.aGaugeAi92.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
-            this.aGaugeAi92.ScaleLinesMinorInnerRadius = 75;
-            this.aGaugeAi92.ScaleLinesMinorOuterRadius = 80;
-            this.aGaugeAi92.ScaleLinesMinorTicks = 9;
-            this.aGaugeAi92.ScaleLinesMinorWidth = 1;
-            this.aGaugeAi92.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.aGaugeAi92.ScaleNumbersFormat = null;
-            this.aGaugeAi92.ScaleNumbersRadius = 95;
-            this.aGaugeAi92.ScaleNumbersRotation = 0;
-            this.aGaugeAi92.ScaleNumbersStartScaleLine = 0;
-            this.aGaugeAi92.ScaleNumbersStepScaleLines = 1;
-            this.aGaugeAi92.Size = new System.Drawing.Size(205, 180);
-            this.aGaugeAi92.TabIndex = 1;
-            this.aGaugeAi92.Text = "aGauge2";
-            this.aGaugeAi92.Value = 0F;
+            this.employeesDBDataSet.DataSetName = "EmployeesDBDataSet";
+            this.employeesDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // TimerButton
+            // 
+            this.TimerButton.Image = global::RSPO.Properties.Resources.stop;
+            this.TimerButton.Location = new System.Drawing.Point(289, 0);
+            this.TimerButton.Name = "TimerButton";
+            this.TimerButton.Size = new System.Drawing.Size(25, 25);
+            this.TimerButton.TabIndex = 8;
+            this.TimerButton.UseVisualStyleBackColor = true;
+            this.TimerButton.Visible = false;
+            this.TimerButton.Click += new System.EventHandler(this.TimerButton_Click);
+            // 
+            // materialTabControl1
+            // 
+            this.materialTabControl1.Controls.Add(this.tabPage1);
+            this.materialTabControl1.Controls.Add(this.tabPage2);
+            this.materialTabControl1.Depth = 0;
+            this.materialTabControl1.Location = new System.Drawing.Point(0, 68);
+            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl1.Name = "materialTabControl1";
+            this.materialTabControl1.Padding = new System.Drawing.Point(10, 3);
+            this.materialTabControl1.SelectedIndex = 0;
+            this.materialTabControl1.Size = new System.Drawing.Size(850, 486);
+            this.materialTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.materialTabControl1.TabIndex = 5;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.AutoScroll = true;
+            this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.materialLabel1);
+            this.tabPage1.Controls.Add(this.pistolTable1DataGridView);
+            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.aGaugeDisel);
+            this.tabPage1.Controls.Add(this.materialLabel2);
+            this.tabPage1.Controls.Add(this.aGaugeAi95);
+            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.aGaugeAi92);
+            this.tabPage1.Controls.Add(this.materialLabel3);
+            this.tabPage1.Controls.Add(this.aGaugeGaz);
+            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.textBox4);
+            this.tabPage1.Controls.Add(this.materialLabel4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(842, 460);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "АЗС";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.BackColor = System.Drawing.SystemColors.Window;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(634, 191);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(77, 19);
+            this.materialLabel1.TabIndex = 42;
+            this.materialLabel1.Text = "Цена Газ:";
+            // 
+            // pistolTable1DataGridView
+            // 
+            this.pistolTable1DataGridView.AutoGenerateColumns = false;
+            this.pistolTable1DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.pistolTable1DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pistolTable1DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dispenser,
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.pistolTable1DataGridView.DataSource = this.pistolTable1BindingSource;
+            this.pistolTable1DataGridView.Location = new System.Drawing.Point(3, 235);
+            this.pistolTable1DataGridView.Name = "pistolTable1DataGridView";
+            this.pistolTable1DataGridView.Size = new System.Drawing.Size(833, 226);
+            this.pistolTable1DataGridView.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(750, 188);
+            this.textBox1.MaxLength = 6;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(89, 27);
+            this.textBox1.TabIndex = 41;
+            this.textBox1.Text = "6000";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // aGaugeDisel
             // 
@@ -223,13 +217,13 @@
             this.aGaugeDisel.BaseArcSweep = 270;
             this.aGaugeDisel.BaseArcWidth = 2;
             this.aGaugeDisel.Center = new System.Drawing.Point(100, 100);
-            aGaugeLabel3.Color = System.Drawing.SystemColors.MenuHighlight;
-            aGaugeLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            aGaugeLabel3.Name = "GaugeLabel1";
-            aGaugeLabel3.Position = new System.Drawing.Point(0, 0);
-            aGaugeLabel3.Text = "Дизель";
-            this.aGaugeDisel.GaugeLabels.Add(aGaugeLabel3);
-            this.aGaugeDisel.Location = new System.Drawing.Point(422, 64);
+            aGaugeLabel1.Color = System.Drawing.SystemColors.MenuHighlight;
+            aGaugeLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            aGaugeLabel1.Name = "GaugeLabel1";
+            aGaugeLabel1.Position = new System.Drawing.Point(0, 0);
+            aGaugeLabel1.Text = "Дизель";
+            this.aGaugeDisel.GaugeLabels.Add(aGaugeLabel1);
+            this.aGaugeDisel.Location = new System.Drawing.Point(423, 2);
             this.aGaugeDisel.MaxValue = 400F;
             this.aGaugeDisel.MinValue = 0F;
             this.aGaugeDisel.Name = "aGaugeDisel";
@@ -259,9 +253,161 @@
             this.aGaugeDisel.ScaleNumbersStartScaleLine = 0;
             this.aGaugeDisel.ScaleNumbersStepScaleLines = 1;
             this.aGaugeDisel.Size = new System.Drawing.Size(205, 180);
-            this.aGaugeDisel.TabIndex = 2;
+            this.aGaugeDisel.TabIndex = 33;
             this.aGaugeDisel.Text = "aGauge3";
             this.aGaugeDisel.Value = 0F;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.BackColor = System.Drawing.SystemColors.Window;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(423, 191);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(106, 19);
+            this.materialLabel2.TabIndex = 40;
+            this.materialLabel2.Text = "Цена Дизель:";
+            // 
+            // aGaugeAi95
+            // 
+            this.aGaugeAi95.BaseArcColor = System.Drawing.Color.Gray;
+            this.aGaugeAi95.BaseArcRadius = 80;
+            this.aGaugeAi95.BaseArcStart = 135;
+            this.aGaugeAi95.BaseArcSweep = 270;
+            this.aGaugeAi95.BaseArcWidth = 2;
+            this.aGaugeAi95.Center = new System.Drawing.Point(100, 100);
+            aGaugeLabel2.Color = System.Drawing.SystemColors.MenuHighlight;
+            aGaugeLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            aGaugeLabel2.Name = "GaugeLabel1";
+            aGaugeLabel2.Position = new System.Drawing.Point(0, 0);
+            aGaugeLabel2.Text = "АИ-95";
+            this.aGaugeAi95.GaugeLabels.Add(aGaugeLabel2);
+            aGaugeRange1.Color = System.Drawing.Color.Red;
+            aGaugeRange1.EndValue = 400F;
+            aGaugeRange1.InnerRadius = 70;
+            aGaugeRange1.InRange = false;
+            aGaugeRange1.Name = "GaugeRange1";
+            aGaugeRange1.OuterRadius = 80;
+            aGaugeRange1.StartValue = 350F;
+            aGaugeRange2.Color = System.Drawing.Color.Lime;
+            aGaugeRange2.EndValue = 350F;
+            aGaugeRange2.InnerRadius = 75;
+            aGaugeRange2.InRange = false;
+            aGaugeRange2.Name = "GaugeRange2";
+            aGaugeRange2.OuterRadius = 80;
+            aGaugeRange2.StartValue = 0F;
+            this.aGaugeAi95.GaugeRanges.Add(aGaugeRange1);
+            this.aGaugeAi95.GaugeRanges.Add(aGaugeRange2);
+            this.aGaugeAi95.Location = new System.Drawing.Point(1, 2);
+            this.aGaugeAi95.MaxValue = 400F;
+            this.aGaugeAi95.MinValue = 0F;
+            this.aGaugeAi95.Name = "aGaugeAi95";
+            this.aGaugeAi95.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
+            this.aGaugeAi95.NeedleColor2 = System.Drawing.Color.Indigo;
+            this.aGaugeAi95.NeedleRadius = 80;
+            this.aGaugeAi95.NeedleType = System.Windows.Forms.NeedleType.Advance;
+            this.aGaugeAi95.NeedleWidth = 2;
+            this.aGaugeAi95.ScaleLinesInterColor = System.Drawing.Color.DimGray;
+            this.aGaugeAi95.ScaleLinesInterInnerRadius = 73;
+            this.aGaugeAi95.ScaleLinesInterOuterRadius = 80;
+            this.aGaugeAi95.ScaleLinesInterWidth = 1;
+            this.aGaugeAi95.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeAi95.ScaleLinesMajorInnerRadius = 70;
+            this.aGaugeAi95.ScaleLinesMajorOuterRadius = 80;
+            this.aGaugeAi95.ScaleLinesMajorStepValue = 50F;
+            this.aGaugeAi95.ScaleLinesMajorWidth = 2;
+            this.aGaugeAi95.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
+            this.aGaugeAi95.ScaleLinesMinorInnerRadius = 75;
+            this.aGaugeAi95.ScaleLinesMinorOuterRadius = 80;
+            this.aGaugeAi95.ScaleLinesMinorTicks = 9;
+            this.aGaugeAi95.ScaleLinesMinorWidth = 1;
+            this.aGaugeAi95.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeAi95.ScaleNumbersFormat = null;
+            this.aGaugeAi95.ScaleNumbersRadius = 95;
+            this.aGaugeAi95.ScaleNumbersRotation = 0;
+            this.aGaugeAi95.ScaleNumbersStartScaleLine = 0;
+            this.aGaugeAi95.ScaleNumbersStepScaleLines = 1;
+            this.aGaugeAi95.Size = new System.Drawing.Size(205, 180);
+            this.aGaugeAi95.TabIndex = 31;
+            this.aGaugeAi95.Text = "aGauge1";
+            this.aGaugeAi95.Value = 0F;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(539, 188);
+            this.textBox2.MaxLength = 6;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(89, 27);
+            this.textBox2.TabIndex = 39;
+            this.textBox2.Text = "11434";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // aGaugeAi92
+            // 
+            this.aGaugeAi92.BaseArcColor = System.Drawing.Color.Gray;
+            this.aGaugeAi92.BaseArcRadius = 80;
+            this.aGaugeAi92.BaseArcStart = 135;
+            this.aGaugeAi92.BaseArcSweep = 270;
+            this.aGaugeAi92.BaseArcWidth = 2;
+            this.aGaugeAi92.Center = new System.Drawing.Point(100, 100);
+            aGaugeLabel3.Color = System.Drawing.SystemColors.MenuHighlight;
+            aGaugeLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            aGaugeLabel3.Name = "GaugeLabel1";
+            aGaugeLabel3.Position = new System.Drawing.Point(0, 0);
+            aGaugeLabel3.Text = "АИ-92";
+            this.aGaugeAi92.GaugeLabels.Add(aGaugeLabel3);
+            this.aGaugeAi92.Location = new System.Drawing.Point(212, 2);
+            this.aGaugeAi92.MaxValue = 400F;
+            this.aGaugeAi92.MinValue = 0F;
+            this.aGaugeAi92.Name = "aGaugeAi92";
+            this.aGaugeAi92.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Yellow;
+            this.aGaugeAi92.NeedleColor2 = System.Drawing.Color.Indigo;
+            this.aGaugeAi92.NeedleRadius = 80;
+            this.aGaugeAi92.NeedleType = System.Windows.Forms.NeedleType.Advance;
+            this.aGaugeAi92.NeedleWidth = 2;
+            this.aGaugeAi92.ScaleLinesInterColor = System.Drawing.Color.DimGray;
+            this.aGaugeAi92.ScaleLinesInterInnerRadius = 73;
+            this.aGaugeAi92.ScaleLinesInterOuterRadius = 80;
+            this.aGaugeAi92.ScaleLinesInterWidth = 1;
+            this.aGaugeAi92.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGaugeAi92.ScaleLinesMajorInnerRadius = 70;
+            this.aGaugeAi92.ScaleLinesMajorOuterRadius = 80;
+            this.aGaugeAi92.ScaleLinesMajorStepValue = 50F;
+            this.aGaugeAi92.ScaleLinesMajorWidth = 2;
+            this.aGaugeAi92.ScaleLinesMinorColor = System.Drawing.Color.DimGray;
+            this.aGaugeAi92.ScaleLinesMinorInnerRadius = 75;
+            this.aGaugeAi92.ScaleLinesMinorOuterRadius = 80;
+            this.aGaugeAi92.ScaleLinesMinorTicks = 9;
+            this.aGaugeAi92.ScaleLinesMinorWidth = 1;
+            this.aGaugeAi92.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGaugeAi92.ScaleNumbersFormat = null;
+            this.aGaugeAi92.ScaleNumbersRadius = 95;
+            this.aGaugeAi92.ScaleNumbersRotation = 0;
+            this.aGaugeAi92.ScaleNumbersStartScaleLine = 0;
+            this.aGaugeAi92.ScaleNumbersStepScaleLines = 1;
+            this.aGaugeAi92.Size = new System.Drawing.Size(205, 180);
+            this.aGaugeAi92.TabIndex = 32;
+            this.aGaugeAi92.Text = "aGauge2";
+            this.aGaugeAi92.Value = 0F;
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.BackColor = System.Drawing.SystemColors.Window;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(212, 191);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(94, 19);
+            this.materialLabel3.TabIndex = 38;
+            this.materialLabel3.Text = "Цена АИ-92:";
             // 
             // aGaugeGaz
             // 
@@ -277,7 +423,7 @@
             aGaugeLabel4.Position = new System.Drawing.Point(0, 0);
             aGaugeLabel4.Text = "Газ";
             this.aGaugeGaz.GaugeLabels.Add(aGaugeLabel4);
-            this.aGaugeGaz.Location = new System.Drawing.Point(633, 64);
+            this.aGaugeGaz.Location = new System.Drawing.Point(634, 2);
             this.aGaugeGaz.MaxValue = 400F;
             this.aGaugeGaz.MinValue = 0F;
             this.aGaugeGaz.Name = "aGaugeGaz";
@@ -307,240 +453,58 @@
             this.aGaugeGaz.ScaleNumbersStartScaleLine = 0;
             this.aGaugeGaz.ScaleNumbersStepScaleLines = 1;
             this.aGaugeGaz.Size = new System.Drawing.Size(205, 180);
-            this.aGaugeGaz.TabIndex = 3;
+            this.aGaugeGaz.TabIndex = 34;
             this.aGaugeGaz.Text = "aGauge4";
             this.aGaugeGaz.Value = 0F;
             // 
-            // trackBar1
+            // textBox3
             // 
-            this.trackBar1.Location = new System.Drawing.Point(211, 199);
-            this.trackBar1.Maximum = 400;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(205, 45);
-            this.trackBar1.TabIndex = 4;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.textBox3.Enabled = false;
+            this.textBox3.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(328, 188);
+            this.textBox3.MaxLength = 6;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(89, 27);
+            this.textBox3.TabIndex = 37;
+            this.textBox3.Text = "27483";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // materialTabControl1
+            // textBox4
             // 
-            this.materialTabControl1.Controls.Add(this.tabPage1);
-            this.materialTabControl1.Controls.Add(this.tabPage2);
-            this.materialTabControl1.Controls.Add(this.tabPage3);
-            this.materialTabControl1.Controls.Add(this.tabPage4);
-            this.materialTabControl1.Controls.Add(this.tabPage5);
-            this.materialTabControl1.Controls.Add(this.tabPage6);
-            this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(0, 283);
-            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabControl1.Name = "materialTabControl1";
-            this.materialTabControl1.Padding = new System.Drawing.Point(10, 3);
-            this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(840, 271);
-            this.materialTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.materialTabControl1.TabIndex = 5;
+            this.textBox4.Enabled = false;
+            this.textBox4.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(117, 188);
+            this.textBox4.MaxLength = 6;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(89, 27);
+            this.textBox4.TabIndex = 35;
+            this.textBox4.Text = "24858";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tabPage1
+            // materialLabel4
             // 
-            this.tabPage1.AutoScroll = true;
-            this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.pistolTable1DataGridView);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(832, 245);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Колонка №1";
-            // 
-            // pistolTable1DataGridView
-            // 
-            this.pistolTable1DataGridView.AutoGenerateColumns = false;
-            this.pistolTable1DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.pistolTable1DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
-            this.pistolTable1DataGridView.DataSource = this.pistolTable1BindingSource;
-            this.pistolTable1DataGridView.Location = new System.Drawing.Point(-2, -1);
-            this.pistolTable1DataGridView.Name = "pistolTable1DataGridView";
-            this.pistolTable1DataGridView.Size = new System.Drawing.Size(833, 243);
-            this.pistolTable1DataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Time";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Time";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 130;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Ai95";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Ai95";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Ai92";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Ai92";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Disel";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Disel";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Gaz";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Gaz";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "TotalV";
-            this.dataGridViewTextBoxColumn6.HeaderText = "TotalV";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 120;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "TotalM";
-            this.dataGridViewTextBoxColumn7.HeaderText = "TotalM";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 115;
-            // 
-            // pistolTable1BindingSource
-            // 
-            this.pistolTable1BindingSource.DataMember = "PistolTable1";
-            this.pistolTable1BindingSource.DataSource = this.employeesDBDataSet;
-            // 
-            // employeesDBDataSet
-            // 
-            this.employeesDBDataSet.DataSetName = "EmployeesDBDataSet";
-            this.employeesDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.BackColor = System.Drawing.SystemColors.Window;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(1, 191);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(94, 19);
+            this.materialLabel4.TabIndex = 36;
+            this.materialLabel4.Text = "Цена АИ-95:";
             // 
             // tabPage2
             // 
+            this.tabPage2.AutoScroll = true;
             this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.materialCheckBox3);
-            this.tabPage2.Controls.Add(this.materialCheckBox2);
-            this.tabPage2.Controls.Add(this.materialCheckBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(832, 245);
+            this.tabPage2.Size = new System.Drawing.Size(842, 460);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Колонка №2";
-            // 
-            // materialCheckBox3
-            // 
-            this.materialCheckBox3.AutoSize = true;
-            this.materialCheckBox3.Depth = 0;
-            this.materialCheckBox3.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialCheckBox3.Location = new System.Drawing.Point(16, 72);
-            this.materialCheckBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckBox3.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckBox3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckBox3.Name = "materialCheckBox3";
-            this.materialCheckBox3.Ripple = true;
-            this.materialCheckBox3.Size = new System.Drawing.Size(150, 30);
-            this.materialCheckBox3.TabIndex = 2;
-            this.materialCheckBox3.Text = "materialCheckBox3";
-            this.materialCheckBox3.UseVisualStyleBackColor = true;
-            // 
-            // materialCheckBox2
-            // 
-            this.materialCheckBox2.AutoSize = true;
-            this.materialCheckBox2.Depth = 0;
-            this.materialCheckBox2.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialCheckBox2.Location = new System.Drawing.Point(16, 42);
-            this.materialCheckBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckBox2.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckBox2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckBox2.Name = "materialCheckBox2";
-            this.materialCheckBox2.Ripple = true;
-            this.materialCheckBox2.Size = new System.Drawing.Size(150, 30);
-            this.materialCheckBox2.TabIndex = 1;
-            this.materialCheckBox2.Text = "materialCheckBox2";
-            this.materialCheckBox2.UseVisualStyleBackColor = true;
-            // 
-            // materialCheckBox1
-            // 
-            this.materialCheckBox1.AutoSize = true;
-            this.materialCheckBox1.Depth = 0;
-            this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
-            this.materialCheckBox1.Location = new System.Drawing.Point(16, 12);
-            this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialCheckBox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCheckBox1.Name = "materialCheckBox1";
-            this.materialCheckBox1.Ripple = true;
-            this.materialCheckBox1.Size = new System.Drawing.Size(150, 30);
-            this.materialCheckBox1.TabIndex = 0;
-            this.materialCheckBox1.Text = "materialCheckBox1";
-            this.materialCheckBox1.UseVisualStyleBackColor = false;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(832, 245);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Колонка №3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(832, 245);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Колонка №4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(832, 245);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Колонка №5";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(832, 245);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Колонка №6";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // TimerButton
-            // 
-            this.TimerButton.Image = global::RSPO.Properties.Resources.stop;
-            this.TimerButton.Location = new System.Drawing.Point(289, 0);
-            this.TimerButton.Name = "TimerButton";
-            this.TimerButton.Size = new System.Drawing.Size(25, 25);
-            this.TimerButton.TabIndex = 8;
-            this.TimerButton.UseVisualStyleBackColor = true;
-            this.TimerButton.Visible = false;
-            this.TimerButton.Click += new System.EventHandler(this.TimerButton_Click);
-            // 
-            // materialTabSelector1
-            // 
-            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Location = new System.Drawing.Point(0, 24);
-            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(824, 38);
-            this.materialTabSelector1.TabIndex = 6;
-            this.materialTabSelector1.Text = "materialTabSelector1";
+            this.tabPage2.Text = "Магазин";
             // 
             // statusStrip
             // 
@@ -549,7 +513,7 @@
             this.FioStatusLabel});
             this.statusStrip.Location = new System.Drawing.Point(0, 555);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(840, 33);
+            this.statusStrip.Size = new System.Drawing.Size(847, 33);
             this.statusStrip.TabIndex = 7;
             this.statusStrip.Text = "statusStrip1";
             // 
@@ -595,7 +559,6 @@
             this.pistolTable1BindingNavigator.Size = new System.Drawing.Size(286, 25);
             this.pistolTable1BindingNavigator.TabIndex = 0;
             this.pistolTable1BindingNavigator.Text = "bindingNavigator1";
-            this.pistolTable1BindingNavigator.Visible = false;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -692,57 +655,48 @@
             this.pistolTable1BindingNavigatorSaveItem.Text = "Сохранить данные";
             this.pistolTable1BindingNavigatorSaveItem.Click += new System.EventHandler(this.pistolTable1BindingNavigatorSaveItem_Click);
             // 
-            // Ai95Box
+            // DeleteAllButton
             // 
-            this.Ai95Box.Enabled = false;
-            this.Ai95Box.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ai95Box.Location = new System.Drawing.Point(116, 250);
-            this.Ai95Box.MaxLength = 6;
-            this.Ai95Box.Name = "Ai95Box";
-            this.Ai95Box.Size = new System.Drawing.Size(89, 27);
-            this.Ai95Box.TabIndex = 10;
-            this.Ai95Box.Text = "24858";
-            this.Ai95Box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DeleteAllButton.Location = new System.Drawing.Point(320, 0);
+            this.DeleteAllButton.Name = "DeleteAllButton";
+            this.DeleteAllButton.Size = new System.Drawing.Size(121, 25);
+            this.DeleteAllButton.TabIndex = 18;
+            this.DeleteAllButton.Text = "Удалить все элементы";
+            this.DeleteAllButton.UseVisualStyleBackColor = true;
+            this.DeleteAllButton.Visible = false;
+            this.DeleteAllButton.Click += new System.EventHandler(this.DeleteAllButton_Click);
             // 
-            // Ai95Label
+            // employeesTableTableAdapter1
             // 
-            this.Ai95Label.AutoSize = true;
-            this.Ai95Label.BackColor = System.Drawing.SystemColors.Window;
-            this.Ai95Label.Depth = 0;
-            this.Ai95Label.Font = new System.Drawing.Font("Roboto", 11F);
-            this.Ai95Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Ai95Label.Location = new System.Drawing.Point(0, 253);
-            this.Ai95Label.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Ai95Label.Name = "Ai95Label";
-            this.Ai95Label.Size = new System.Drawing.Size(94, 19);
-            this.Ai95Label.TabIndex = 11;
-            this.Ai95Label.Text = "Цена АИ-95:";
+            this.employeesTableTableAdapter1.ClearBeforeFill = true;
             // 
-            // Ai92Label
+            // pistolTable1TableAdapter
             // 
-            this.Ai92Label.AutoSize = true;
-            this.Ai92Label.BackColor = System.Drawing.SystemColors.Window;
-            this.Ai92Label.Depth = 0;
-            this.Ai92Label.Font = new System.Drawing.Font("Roboto", 11F);
-            this.Ai92Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Ai92Label.Location = new System.Drawing.Point(211, 253);
-            this.Ai92Label.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Ai92Label.Name = "Ai92Label";
-            this.Ai92Label.Size = new System.Drawing.Size(94, 19);
-            this.Ai92Label.TabIndex = 13;
-            this.Ai92Label.Text = "Цена АИ-92:";
+            this.pistolTable1TableAdapter.ClearBeforeFill = true;
             // 
-            // Ai92Box
+            // tableAdapterManager
             // 
-            this.Ai92Box.Enabled = false;
-            this.Ai92Box.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ai92Box.Location = new System.Drawing.Point(327, 250);
-            this.Ai92Box.MaxLength = 6;
-            this.Ai92Box.Name = "Ai92Box";
-            this.Ai92Box.Size = new System.Drawing.Size(89, 27);
-            this.Ai92Box.TabIndex = 12;
-            this.Ai92Box.Text = "27483";
-            this.Ai92Box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.EmployeesTableTableAdapter = this.employeesTableTableAdapter1;
+            this.tableAdapterManager.PistolTable1TableAdapter = this.pistolTable1TableAdapter;
+            this.tableAdapterManager.UpdateOrder = RSPO.EmployeesDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // employeesTableBindingSource
+            // 
+            this.employeesTableBindingSource.DataMember = "EmployeesTable";
+            this.employeesTableBindingSource.DataSource = this.employeesDBDataSet;
+            // 
+            // GazBox
+            // 
+            this.GazBox.Enabled = false;
+            this.GazBox.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GazBox.Location = new System.Drawing.Point(749, 250);
+            this.GazBox.MaxLength = 6;
+            this.GazBox.Name = "GazBox";
+            this.GazBox.Size = new System.Drawing.Size(89, 27);
+            this.GazBox.TabIndex = 16;
+            this.GazBox.Text = "6000";
+            this.GazBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DiselLabel
             // 
@@ -770,6 +724,58 @@
             this.DiselBox.Text = "11434";
             this.DiselBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // Ai92Label
+            // 
+            this.Ai92Label.AutoSize = true;
+            this.Ai92Label.BackColor = System.Drawing.SystemColors.Window;
+            this.Ai92Label.Depth = 0;
+            this.Ai92Label.Font = new System.Drawing.Font("Roboto", 11F);
+            this.Ai92Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Ai92Label.Location = new System.Drawing.Point(211, 253);
+            this.Ai92Label.MouseState = MaterialSkin.MouseState.HOVER;
+            this.Ai92Label.Name = "Ai92Label";
+            this.Ai92Label.Size = new System.Drawing.Size(94, 19);
+            this.Ai92Label.TabIndex = 13;
+            this.Ai92Label.Text = "Цена АИ-92:";
+            // 
+            // Ai92Box
+            // 
+            this.Ai92Box.Enabled = false;
+            this.Ai92Box.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ai92Box.Location = new System.Drawing.Point(327, 250);
+            this.Ai92Box.MaxLength = 6;
+            this.Ai92Box.Name = "Ai92Box";
+            this.Ai92Box.Size = new System.Drawing.Size(89, 27);
+            this.Ai92Box.TabIndex = 12;
+            this.Ai92Box.Text = "27483";
+            this.Ai92Box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Ai95Label
+            // 
+            this.Ai95Label.AutoSize = true;
+            this.Ai95Label.BackColor = System.Drawing.SystemColors.Window;
+            this.Ai95Label.Depth = 0;
+            this.Ai95Label.Font = new System.Drawing.Font("Roboto", 11F);
+            this.Ai95Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Ai95Label.Location = new System.Drawing.Point(0, 253);
+            this.Ai95Label.MouseState = MaterialSkin.MouseState.HOVER;
+            this.Ai95Label.Name = "Ai95Label";
+            this.Ai95Label.Size = new System.Drawing.Size(94, 19);
+            this.Ai95Label.TabIndex = 11;
+            this.Ai95Label.Text = "Цена АИ-95:";
+            // 
+            // Ai95Box
+            // 
+            this.Ai95Box.Enabled = false;
+            this.Ai95Box.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ai95Box.Location = new System.Drawing.Point(116, 250);
+            this.Ai95Box.MaxLength = 6;
+            this.Ai95Box.Name = "Ai95Box";
+            this.Ai95Box.Size = new System.Drawing.Size(89, 27);
+            this.Ai95Box.TabIndex = 10;
+            this.Ai95Box.Text = "24858";
+            this.Ai95Box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // GazLabel
             // 
             this.GazLabel.AutoSize = true;
@@ -784,111 +790,101 @@
             this.GazLabel.TabIndex = 17;
             this.GazLabel.Text = "Цена Газ:";
             // 
-            // GazBox
+            // materialTabSelector1
             // 
-            this.GazBox.Enabled = false;
-            this.GazBox.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GazBox.Location = new System.Drawing.Point(749, 250);
-            this.GazBox.MaxLength = 6;
-            this.GazBox.Name = "GazBox";
-            this.GazBox.Size = new System.Drawing.Size(89, 27);
-            this.GazBox.TabIndex = 16;
-            this.GazBox.Text = "6000";
-            this.GazBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(0, 24);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(847, 38);
+            this.materialTabSelector1.TabIndex = 6;
+            this.materialTabSelector1.Text = "materialTabSelector1";
             // 
-            // DeleteAllButton
+            // Dispenser
             // 
-            this.DeleteAllButton.Location = new System.Drawing.Point(320, 0);
-            this.DeleteAllButton.Name = "DeleteAllButton";
-            this.DeleteAllButton.Size = new System.Drawing.Size(121, 25);
-            this.DeleteAllButton.TabIndex = 18;
-            this.DeleteAllButton.Text = "Удалить все элементы";
-            this.DeleteAllButton.UseVisualStyleBackColor = true;
-            this.DeleteAllButton.Visible = false;
-            this.DeleteAllButton.Click += new System.EventHandler(this.DeleteAllButton_Click);
+            this.Dispenser.DataPropertyName = "Dispenser";
+            this.Dispenser.HeaderText = "Колонка (№)";
+            this.Dispenser.Name = "Dispenser";
             // 
-            // employeesTableTableAdapter1
+            // dataGridViewTextBoxColumn1
             // 
-            this.employeesTableTableAdapter1.ClearBeforeFill = true;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Time";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Время";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // pistolTable1TableAdapter
+            // dataGridViewTextBoxColumn2
             // 
-            this.pistolTable1TableAdapter.ClearBeforeFill = true;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Ai95";
+            this.dataGridViewTextBoxColumn2.HeaderText = "АИ-95";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // tableAdapterManager
+            // dataGridViewTextBoxColumn3
             // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.EmployeesTableTableAdapter = this.employeesTableTableAdapter1;
-            this.tableAdapterManager.PistolTable1TableAdapter = this.pistolTable1TableAdapter;
-            this.tableAdapterManager.UpdateOrder = RSPO.EmployeesDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Ai92";
+            this.dataGridViewTextBoxColumn3.HeaderText = "АИ-92";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Disel";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Дизель";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Gaz";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Газ";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "TotalV";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Всего(л)";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "TotalM";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Всего(руб)";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // AZSForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 588);
-            this.Controls.Add(this.DeleteAllButton);
-            this.Controls.Add(this.GazLabel);
-            this.Controls.Add(this.GazBox);
-            this.Controls.Add(this.DiselLabel);
-            this.Controls.Add(this.DiselBox);
-            this.Controls.Add(this.Ai92Label);
-            this.Controls.Add(this.Ai92Box);
-            this.Controls.Add(this.Ai95Label);
-            this.Controls.Add(this.Ai95Box);
-            this.Controls.Add(this.TimerButton);
-            this.Controls.Add(this.pistolTable1BindingNavigator);
-            this.Controls.Add(this.statusStrip);
+            this.ClientSize = new System.Drawing.Size(847, 588);
             this.Controls.Add(this.materialTabSelector1);
+            this.Controls.Add(this.pistolTable1BindingNavigator);
+            this.Controls.Add(this.DeleteAllButton);
+            this.Controls.Add(this.TimerButton);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.materialTabControl1);
-            this.Controls.Add(this.trackBar1);
-            this.Controls.Add(this.aGaugeGaz);
-            this.Controls.Add(this.aGaugeDisel);
-            this.Controls.Add(this.aGaugeAi92);
-            this.Controls.Add(this.aGaugeAi95);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AZSForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AZSForm_FormClosed);
             this.Load += new System.EventHandler(this.AZSForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            this.materialTabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pistolTable1DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pistolTable1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesDBDataSet)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.materialTabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pistolTable1DataGridView)).EndInit();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pistolTable1BindingNavigator)).EndInit();
             this.pistolTable1BindingNavigator.ResumeLayout(false);
             this.pistolTable1BindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesTableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.AGauge aGaugeAi95;
-        private System.Windows.Forms.AGauge aGaugeAi92;
-        private System.Windows.Forms.AGauge aGaugeDisel;
-        private System.Windows.Forms.AGauge aGaugeGaz;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox3;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox2;
-        private MaterialSkin.Controls.MaterialCheckBox materialCheckBox1;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel FioStatusLabel;
         private EmployeesDBDataSetTableAdapters.EmployeesTableTableAdapter employeesTableTableAdapter1;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Timer timerPistols;
         private EmployeesDBDataSet employeesDBDataSet;
         private System.Windows.Forms.BindingSource pistolTable1BindingSource;
@@ -907,16 +903,35 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton pistolTable1BindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView pistolTable1DataGridView;
         private System.Windows.Forms.Button TimerButton;
-        private System.Windows.Forms.TextBox Ai95Box;
-        private MaterialSkin.Controls.MaterialLabel Ai95Label;
-        private MaterialSkin.Controls.MaterialLabel Ai92Label;
-        private System.Windows.Forms.TextBox Ai92Box;
+        private System.Windows.Forms.Button DeleteAllButton;
+        private System.Windows.Forms.BindingSource employeesTableBindingSource;
+        private System.Windows.Forms.TextBox GazBox;
         private MaterialSkin.Controls.MaterialLabel DiselLabel;
         private System.Windows.Forms.TextBox DiselBox;
+        private MaterialSkin.Controls.MaterialLabel Ai92Label;
+        private System.Windows.Forms.TextBox Ai92Box;
+        private MaterialSkin.Controls.MaterialLabel Ai95Label;
+        private System.Windows.Forms.TextBox Ai95Box;
         private MaterialSkin.Controls.MaterialLabel GazLabel;
-        private System.Windows.Forms.TextBox GazBox;
+        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.DataGridView pistolTable1DataGridView;
+        private System.Windows.Forms.TextBox textBox1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private System.Windows.Forms.AGauge aGaugeAi95;
+        private System.Windows.Forms.TextBox textBox2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private System.Windows.Forms.TabPage tabPage2;
+        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
+        private System.Windows.Forms.AGauge aGaugeDisel;
+        private System.Windows.Forms.AGauge aGaugeAi92;
+        private System.Windows.Forms.AGauge aGaugeGaz;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Dispenser;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -924,6 +939,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.Button DeleteAllButton;
     }
 }
